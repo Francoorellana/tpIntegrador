@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>Login</title>
+    <title>Mis direcciones</title>
 </head>
 <body>
 
     <section class="form-login">
         <article >
             <form action="#" method="post" >
-                <h3>Nueva direccion</h3>
+                <h3 class="titulo">Nueva direccion<span class="material-icons">
+                    home
+                    </span></h3>
                 <label for="alias">Alias:</label>
-                <input type="text" id="alias" name="alias" placeholder="Alias" ><br><br>
+                <input type="text" id="alias" name="alias" placeholder="Alias" >
                 <label for="provincias">Provincia</label>
                 <select id="provincias" name="provincias" >
                     <option value="" disabled selected hidden>Seleccionar Provincia</option>
@@ -40,22 +44,22 @@
                     <option value="20">SANTA FE</option>
                     <option value="21">SANTIAGO DEL ESTERO</option>
                     <option value="22">TIERRA DEL FUEGO</option>
-                </select><br><br>
+                </select>
                 <label for="localidades">Localidad</label>
                 <select id="localidades" name="localidades">
                     <option value="" disabled selected hidden>Seleccionar Localidad</option>
                     <option value="1">La Matanza</option>
                     <option value="2">3 de febrero</option>
                     <option value="3">Ezeiza</option>
-                </select><br><br>
-                <label for="direccion">Direccion:</label><br>
-                <input type="text" id="direccion" name="direccion"  placeholder="Ingrese direccion"><br><br>
-                <label for="telefono">Telefono:</label><br>
-                <input type="number" id="telefono" name="telefono"  placeholder="Ingrese telefono"><br><br>
-                <label for="piso">Piso:</label><br>
-                <input type="number" id="piso" name="piso"  placeholder="Ingrese piso"><br><br>
-                <label for="departamento">Dto:</label><br>
-                <input type="text" id="departamento" name="departamento"  placeholder="Ingrese departamento"><br><br>
+                </select>
+                <label for="direccion">Direccion:</label>
+                <input type="text" id="direccion" name="direccion"  placeholder="Ingrese direccion">
+                <label for="telefono">Telefono:</label>
+                <input type="number" id="telefono" name="telefono"  placeholder="Ingrese telefono">
+                <label for="piso">Piso:</label>
+                <input type="number" id="piso" name="piso"  placeholder="Ingrese piso">
+                <label for="departamento">Dto:</label>
+                <input type="text" id="departamento" name="departamento"  placeholder="Ingrese departamento">
                 <input type="submit" value="Guardar" >
                 
               </form> 

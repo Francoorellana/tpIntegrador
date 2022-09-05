@@ -20,9 +20,6 @@ h3{
     padding:1em;
 }
 
-label{
-    margin: 15px 0px 25px 0px;
-}
 p{
     margin: 25px 0px 25px 0px;
 }
@@ -47,4 +44,15 @@ p{
     text-align: center;
     width: 98%;
     margin: 5px 0px 10px 0px
+}
+.form-login .titulo{
+    width: auto;
+}
+.form-login select{
+    width: 98%;
+    margin: 5px 0px 10px 0px;
+    height: 25px;
+}
+.form-login span{
+    padding: 0px 10px 0px 10px;
 }
