@@ -78,3 +78,37 @@ p{
     margin: 25px 30px 0px 0px;
     color: rgba(255, 255, 255, 1);
 }
+.menu-principal{
+    background-color: #018039;
+    height: 30px;
+    border: 1px solid black;
+    padding: 0px 10px 0px 10px;
+}
+.menu-principal ul{
+    display:flex;
+    justify-content: space-between;
+    padding: 5px;
+
+}
+.menu-principal li{
+    list-style: none;
+}
+.menu-principal a{
+    text-decoration: none;
+    color: #fff;
+    padding:10px 10px;
+}
+.carrousel-principal{
+    background-color: #fff;
+    text-align: center;
+}
+.carrousel-principal img{
+    width: 98%;
+    height: 300px;
+}
+
+.footer-principal{
+    background-color: #018039;
+    display: flex;
+    justify-content: space-between;
+}
