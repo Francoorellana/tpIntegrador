@@ -100,13 +100,39 @@ p{
 }
 .carrousel-principal{
     background-color: #fff;
+    border-bottom: 1px solid black;
     text-align: center;
 }
 .carrousel-principal img{
     width: 98%;
     height: 300px;
 }
+.categorias{
+    background-color: #fff;
+}
+.categorias h2{
+    background-color: #fff;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    text-decoration: underline;
+}
 
+.mas-vendidos h2{
+    background-color: #fff;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    text-decoration: underline;
+}
+.mas-vendidos-item {
+    display: flex;
+    justify-content: space-between;
+
+}
+.mas-vendidos-item img{
+    margin:0px 30px 0px 30px;
+    height: 300px;
+    width: 400px;
+}
 .footer-principal{
     background-color: #018039;
     display: flex;
