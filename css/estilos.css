@@ -55,3 +55,26 @@ p{
 .form-login span{
     padding: 0px 10px 0px 10px;
 }
+.contenedor-principal{
+    background-color: #018039;
+    height: 80px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-principal img{
+    height: 75px;
+    width: 128px;
+    border-radius: 7px;
+}
+.contenedor-principal input{
+    width: 800px;
+    height: 45px; 
+    margin-top: 10px;
+    border-radius: 7px;
+}
+.contenedor-principal span{
+    height: 45px; 
+    margin: 25px 30px 0px 0px;
+    color: rgba(255, 255, 255, 1);
+}
