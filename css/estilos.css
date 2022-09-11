@@ -161,9 +161,22 @@ p{
 }
 .footer-principal{
     background-color: #018039;
+    color: #fff;
     bottom: 0;
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: space-between;
+    margin-top: 15px;
+    padding: 15px 15px;
+}
+.footer-principal img{
+    height: 60px;
+    width: 100px;
+    border-radius: 7px;
+    text-align: left;
+    margin: 5px;
+}
+.footer-principal i{
+    margin: 5px;   
+    padding: 5px;
 }
