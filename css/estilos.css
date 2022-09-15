@@ -167,7 +167,8 @@ p{
     height: 80px;
     display: flex;
     margin-top: 15px;
-    padding: 15px 15px;
+    padding-top: 15px;
+    justify-content: space-around;
 }
 .footer-principal img{
     height: 60px;
@@ -176,7 +177,9 @@ p{
     text-align: left;
     margin: 5px;
 }
-.footer-principal i{
-    margin: 5px;   
-    padding: 5px;
+.footer-principal p{
+    position: relative;
+    bottom: 90px;
+    left: 110px;
+    z-index: 1;
 }
