@@ -183,3 +183,71 @@ p{
     left: 110px;
     z-index: 1;
 }
+.tarjeta{
+    
+    position: absolute;
+    top: 450px;
+    left: 500px;
+    z-index: 2;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #0e502a;
+    width: 350px;
+    opacity: 1;
+    box-sizing: border-box;
+    background-color: #018039;
+    color: #fff;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 7px 13px 37px #000;
+    
+}
+
+.tarjeta h2{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.clase-inputs{
+    width: 90%;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid;
+    font-size: 18px;
+}
+.tarjeta .boton{
+    width: 30%;
+    background-color: #0e502a;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin-left: 64%;
+    font-size: 16px;
+}
+.tarjeta .boton:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all 0.6s;
+}
+.tarjeta .flex{
+    display: flex;
+    gap: 10px;
+    margin-right: 16px;
+}
+.tarjeta .x{
+    width: 40px;
+    height: 40px;
+    background-color: #0e502a;
+    border-radius: 50%;
+    transition: all 0.5s;
+    background-image: url(../img/circle-xmark-regular.svg);
+    background-size: cover;
+    position: absolute;
+    left: 320px;
+    bottom: 350px;
+}
+.tarjeta .x:hover{
+    background-color: #fff;
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
