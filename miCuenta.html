@@ -31,7 +31,7 @@
     <nav class="menu-principal">
         <ul >
             <li>
-                <a href="index.html">Home</a>
+                <a href="./index.html" id="inicioMiCuenta">Home</a>
             </li>
             <li>
                 <a href="receta.html">Categorias</a>
@@ -40,26 +40,36 @@
                 <a href="contacto.html">Contacto</a>
             </li>
             <li>
-                <a href="contacto.html">Mi cuenta</a>
+                <a href="#inicioMiCuenta">Mi cuenta</a>
             </li>
         </ul>
     </nav>
     <main>
-        <section >
+        <section class="tituloMiCuenta">
             <article >
                 <h1>Nombre y apellido</h1>
             </article>
         </section>
 
         <section >
-            <article >
+            <article class="form-cuentas">
                 <h1>Mis direcciones</h1>
+                <table> <thead> <tr> <th>Alias</th> <th>Direccion</th> </tr> </thead> 
+                    <tbody> <tr> <td>Direccion 1:</td> <td>Florencio Varela 1903</td> </tr> 
+                            <tr> <td>Direccion 2:</td> <td>Av. Pres. Dr. Arturo Umberto Illia 1755</td> </tr> 
+                    </tbody> 
+                </table>
             </article>
         </section>
         
         <section >
-            <article >
-                <h1>Mis metodos de pago</h1>
+            <article class="form-cuentas">
+                <h1>Mis Metodos de Pago</h1>
+                <table> <thead> <tr> <th>Alias</th> </tr> </thead> 
+                    <tbody> <tr> <td>Visa Credito</td> </tr> 
+                            <tr> <td>Cabal</td> </tr> 
+                    </tbody> 
+                </table>
             </article>
         </section>
     </main>
@@ -69,7 +79,6 @@
                     <img src="./img/Logo.jpeg" alt="logo" class="logo-index">
                     <p>Horarios de atencion: <br>
                         Lunes a Viernes 8hs a 21hs</p>
-                    
                 </article>
                 <article>
                     <ul>
@@ -83,8 +92,7 @@
                     Seguinos en:
                     <a href="https://es-la.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
                     <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                 
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>      
                 </article>
         </section> 
     </footer>
