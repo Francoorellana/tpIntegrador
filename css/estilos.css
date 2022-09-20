@@ -183,6 +183,10 @@ p{
     left: 110px;
     z-index: 1;
 }
+.footer-principal a{
+    color: #fff;
+    text-decoration: none;
+}
 .tarjeta{
     
     position: absolute;
