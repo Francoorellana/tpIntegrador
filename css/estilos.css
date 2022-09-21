@@ -349,5 +349,61 @@ body{
     background-image: url(../img/menu-semanal1.JPG);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.categoriaTartas{
+    position: relative;
+    
+}
+.categoriaTartas ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.categoriaTartas li{
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    border: 2px solid grey;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
 
+}
+.categoriaTartas label{
+    margin:0;
+    background-color: white;
+    position: absolute;
+    top: 190px;
+    padding: 2px;
+    width: inherit;
+    font-size: larger;
+}
+
+.categoriaTartas p{
+    background-color: rgba(187, 166, 166, 0.911);
+    position: absolute;
+    top: 150px;
+    left: 190px;
+    border: 2px groove rgb(153, 148, 148);
+    border-radius: 10%;
+    padding: 2px;
+    font-size: larger;
+}
+
+.categoriaTartas .tarta1{
+    background-image: url(../img/tartas1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.categoriaTartas .tarta2{
+    background-image: url(../img/tarta-calabaza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.categoriaTartas .tarta3{
+    background-image: url(../img/tarta-de-choclo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
