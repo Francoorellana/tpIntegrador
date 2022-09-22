@@ -160,6 +160,7 @@ body{
 .footer-principal{
     background-color: #018039;
     color: #fff;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 80px;
@@ -533,4 +534,35 @@ textarea{
     background-color: #01803893;
     transition: all 0.7s;
     box-shadow: 7px 13px 37px #000;
+}
+.carritoList{
+    width: 80%;
+}
+.carritoList table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+.carritoList  td, th,tr {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+.carritoList  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+.carritoList input{
+    position: relative;
+    left: 650px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin:30px;
+}
+.carritoList input:hover{
+    background-color: #018039;
+    color: #fff;
 }
