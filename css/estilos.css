@@ -3,7 +3,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
-body{
+.bodyDirecciones{
     background-image: url(../img/background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,6 +57,9 @@ body{
 }
 .body-index{
     background-image: none;
+    position: relative;
+    padding-bottom: 100px;
+    min-height: 100vh;
 }
 .contenedor-principal{
     background-color: #018039;
@@ -112,12 +115,22 @@ body{
 }
 .categorias{
     background-color: #fff;
+    margin: 80px;
 }
 .categorias h2{
     background-color: #fff;
     padding: 15px 0px 15px 0px;
     text-align: center;
     text-decoration: underline;
+}
+.categorias article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 80px;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle
 }
 .categorias a{
     background-color: #018039;
@@ -131,6 +144,9 @@ body{
     font-size: 16px;
     border-radius: 7px;
 
+}
+.mas-vendidos{
+    margin: 80px;
 }
 .mas-vendidos h2{
     background-color: #fff;
@@ -152,17 +168,21 @@ body{
 .metodos-pago{
     background-color: #fff;
     text-align: center;
+    margin: 80px;
 }
 .metodos-pago h2{
     padding: 15px 0px 15px 0px;
     text-decoration: underline;
 }
-.footer-principal{
-    background-color: #018039;
-    color: #fff;
+.footer-main{
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+.footer-principal{
+    background-color: #018039;
+    color: #fff;
+    
     height: 80px;
     display: flex;
     margin-top: 15px;
@@ -322,6 +342,8 @@ body{
 
 }
 .portadaCategorias li{
+    height: 150px;
+    width: 150px;
     list-style: none;
     padding: 60px;
     border: 2px solid grey;
@@ -332,7 +354,9 @@ body{
     color: black;
     padding: 10px 10px;
     position: relative;
-    bottom: 90px;
+    bottom: 120px;
+    font-weight: bold;
+    font-size: 125%;
 }
 .portadaCategorias .tartas{
     background-image: url(../img/tartas1.jpg);
@@ -381,7 +405,9 @@ body{
     width: inherit;
     font-size: larger;
 }
-
+.categoriaProducto a{
+    color: #000;
+}
 .categoriaProducto p{
     background-color: rgba(187, 166, 166, 0.911);
     position: absolute;
@@ -391,6 +417,7 @@ body{
     border-radius: 10%;
     padding: 2px;
     font-size: larger;
+   
 }
 
 .categoriaProducto .tarta1{
