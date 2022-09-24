@@ -209,6 +209,9 @@
     padding: 2px;
     font-size: larger;
 }
+.mas-vendidos i{
+    color:black;
+}
 .mas-vendidos .menu1{
     background-image: url(../img/tartas1.jpg);
     background-repeat: no-repeat;
@@ -657,14 +660,16 @@ textarea{
 }
 
 .vista-producto{
-    max-width: 600px;
-    height: 350px;
-    display: flex;
+    max-width: 50%;
     border-radius: 7px;
-    margin-top: 80px;
-    margin-left: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
     box-sizing: border-box;
-    /*border: 5px #018039 outset;*/
+}
+.vista-producto div{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
 }
 .vista-producto:hover{
     background-color: #018039;
@@ -674,25 +679,26 @@ textarea{
     transition: all 0.3s;
     opacity: 0.8;
 }
-.vista-producto > img{
+.vista-producto img{
     width: 100%;
     object-fit: cover;
     border-radius: 7px;
+}
+.vista-producto h2{
+    margin: 0px 0px 20px 0px
 }
 .vista-producto p{
     border-radius: 7px;
     background-color: #018039;
     color: #fff;
-    position: absolute;
+    position: relative;
+    bottom: 100px;
+    left: 450px;
     padding: 16px;
-    width: 35px;
-    height: 10px;
-    margin-left: 533px;
-    margin-top: 288px;
+    width: fit-content;
 }
-.titulo-parrafo{
-    display: flex;
-    flex-flow: column;
+/*.titulo-parrafo{
+ 
     margin-left: 900px;
     margin-top: -290px;
     margin-bottom: 200px;
@@ -716,12 +722,11 @@ textarea{
     text-align: center;
 }
 .info-producto{
-    position: absolute;
     margin-top: 250px;
     margin-left: 900px;
     border-radius: 6px;
     box-sizing: border-box;
-}
+}*/
 .input-info{
     width: 20%;
     border-radius: 7px;
@@ -742,16 +747,17 @@ textarea{
     opacity: 0.9;
 }
 #agregar-carrito:hover{
-    background-color: #018039;
-    color: #fff;
+    background-color: #fff;
+    color: #018039;
     transition: all 0.6s;
     cursor: pointer;
     transform: scale(1.1);
 }
-.productos-similares{
+.tartas-flex h3{
     text-align: center;
     text-decoration: underline;
-    margin-top: 300px;
+    margin: 50px;
+    width: 100%;
 }
 .tartas-flex{
     display:flex;
@@ -759,16 +765,15 @@ textarea{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-    margin-top: -100px;
-    margin-bottom: 100px;
+    margin: 50px 0px 50px 0px;
 }
+
 .tarta-choclo{
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 7px;
     margin-left: 100px;
-    margin-top: 200px;
     cursor: pointer;
 }
 .tarta-choclo:hover{
@@ -814,7 +819,6 @@ textarea{
     height: 300px;
     object-fit: cover;
     border-radius: 7px;
-    margin-top: 200px;
 }
 .tarta-cebolla:hover{
     background-color: #018039;
@@ -859,7 +863,7 @@ textarea{
     object-fit: cover;
     border-radius: 7px;
     margin-right: 100px;
-    margin-top: 200px;
+   
 }
 .tarta-zapallo:hover{
     background-color: #018039;
