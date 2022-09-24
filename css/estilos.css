@@ -44,6 +44,27 @@
     width: 98%;
     margin: 5px 0px 10px 0px
 }
+.form-login div{
+    text-align: center;
+    margin: 40px;
+}
+.form-login a{
+    text-decoration: none;
+    border: 2px solid grey;
+    background-color: #018039;
+    color: white;
+    padding: 7px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.form-login a:hover{
+    background-color: #018039;
+    box-shadow: 7px 13px 37px #000;
+    border: 5px #018039 outset;
+    color: #fff;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
 .form-login .titulo{
     width: auto;
 }
@@ -633,4 +654,291 @@ textarea{
 .carritoList input:hover{
     background-color: #018039;
     color: #fff;
+}
+
+.vista-producto{
+    max-width: 600px;
+    height: 350px;
+    display: flex;
+    border-radius: 7px;
+    margin-top: 80px;
+    margin-left: 200px;
+    box-sizing: border-box;
+    /*border: 5px #018039 outset;*/
+}
+.vista-producto:hover{
+    background-color: #018039;
+    box-shadow: 7px 13px 37px #000;
+    border: 5px #018039 outset;
+    color: #000;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+.vista-producto > img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.vista-producto p{
+    border-radius: 7px;
+    background-color: #018039;
+    color: #fff;
+    position: absolute;
+    padding: 16px;
+    width: 35px;
+    height: 10px;
+    margin-left: 533px;
+    margin-top: 288px;
+}
+.titulo-parrafo{
+    display: flex;
+    flex-flow: column;
+    margin-left: 900px;
+    margin-top: -290px;
+    margin-bottom: 200px;
+    padding: 5px;
+    border-radius: 6px;
+    width: 400px;
+    height: 150px;
+}
+.titulo-parrafo:hover{
+    background-color: #01803893;
+    transition: all 0.3s;
+    box-shadow: 7px 13px 37px #000;
+    opacity: 0.8;
+    border: 5px #018039 outset;
+    color: #fff;
+}
+.titulo-parrafo h2{
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+.info-producto{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 900px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.input-info{
+    width: 20%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+#agregar-carrito{
+    width: 25%;
+    background-color: #018039;
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin-left: 50px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+#agregar-carrito:hover{
+    background-color: #018039;
+    color: #fff;
+    transition: all 0.6s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.productos-similares{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 300px;
+}
+.tartas-flex{
+    display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+.tarta-choclo{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-left: 100px;
+    margin-top: 200px;
+    cursor: pointer;
+}
+.tarta-choclo:hover{
+    background-color: #018039;
+    box-shadow: 7px 13px 37px #000;
+    border: 5px #018039 outset;
+    color: #000;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+#precio-choclo{
+    text-align: center;
+    border-radius: 7px;
+    background-color: #018039;
+    color: #fff;
+    position: absolute;
+    padding: 16px;
+    width: 35px;
+    height: 10px;
+    margin-left: 333px;
+    margin-top: -60px;
+}
+#titulo-choclo{
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-radius: 7px;
+    background-color: #018039;
+    width: 300px;
+    margin-left: 100px;
+}
+#titulo-choclo:hover{
+    background-color: #018039;
+    box-shadow: 7px 13px 37px #000;
+    border: 5px #018039 outset;
+    color: #fff;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+.tarta-cebolla{
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-top: 200px;
+}
+.tarta-cebolla:hover{
+    background-color: #018039;
+    box-shadow: 7px 13px 37px #000;
+    border: 5px #018039 outset;
+    color: #000;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+#precio-cebolla{
+    text-align: center;
+    border-radius: 7px;
+    background-color: #018039;
+    color: #fff;
+    position: absolute;
+    padding: 16px;
+    width: 35px;
+    height: 10px;
+    margin-left: 233px;
+    margin-top: -60px;
+}
+#titulo-cebolla{
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-radius: 7px;
+    background-color: #018039;
+    width: 300px;
+}
+#titulo-cebolla:hover{
+    background-color: #018039;
+    box-shadow: 7px 13px 37px #000;
+    border: 5px #018039 outset;
+    color: #fff;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+.tarta-zapallo{
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-right: 100px;
+    margin-top: 200px;
+}
+.tarta-zapallo:hover{
+    background-color: #018039;
+    box-shadow: 7px 13px 37px #000;
+    border: 5px #018039 outset;
+    color: #000;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+#precio-zapallo{
+    text-align: center;
+    border-radius: 7px;
+    background-color: #018039;
+    color: #fff;
+    position: absolute;
+    padding: 16px;
+    width: 35px;
+    height: 10px;
+    margin-left: 233px;
+    margin-top: -60px;
+}
+#titulo-zapallo{
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-radius: 7px;
+    background-color: #018039;
+    width: 300px;
+}
+#titulo-zapallo:hover{
+    background-color: #018039;
+    box-shadow: 7px 13px 37px #000;
+    border: 5px #018039 outset;
+    color: #fff;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+.formNuevaCuenta p{
+    margin: 25px 0px 25px 0px;
+}
+.formNuevaCuenta{
+    background-color: #fff;
+    width: 500px;
+    height: 600px;
+    margin:auto;
+    margin-top: 10px;
+    border: 3px solid black;
+    border-radius: 1em;
+    font-size: 18px;
+    box-shadow: 10px 15px 40px #fff;
+
+}
+.formNuevaCuenta .logo{
+    height: 260px;
+    border-radius: 1em;
+}
+.formNuevaCuenta input{
+    height: 25px;
+    width: 98%;
+    margin: 5px 0px 10px 0px
+}
+.formNuevaCuenta div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.formNuevaCuenta a{
+    text-decoration: none;
+    border: 2px solid grey;
+    background-color: #018039;
+    color: white;
+    padding: 7px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.formNuevaCuenta a:hover{
+    background-color: #018039;
+    box-shadow: 7px 13px 37px #000;
+    border: 5px #018039 outset;
+    color: #fff;
+    transition: all 0.3s;
+    opacity: 0.8;
 }
