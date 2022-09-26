@@ -968,7 +968,6 @@ textarea{
 }
 
 .pagar-con-tarjeta{
-    position: absolute;
     border-radius: 10px 10px;
     border: 2px solid #0e502a;
     background-color: #018039;
@@ -978,8 +977,10 @@ textarea{
     height: 350px;
     color: #fff;
     padding: 20px;
-    margin-left: 40%;
-    margin-top: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .pagar-con-tarjeta img{
     width: 20px;
@@ -1051,6 +1052,9 @@ textarea{
 }
 .pagar-con-tarjeta2{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 10px 10px;
     border: 2px solid #0e502a;
     background-color: #018039;
@@ -1060,8 +1064,6 @@ textarea{
     height: 550px;
     color: #fff;
     padding: 20px;
-    margin-left: 40%;
-    margin-top: 200px;
 }
 .pagar-con-tarjeta2 img{
     width: 20px;
