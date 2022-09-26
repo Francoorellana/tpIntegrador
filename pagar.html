@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Fresh Market</title>
+</head>
+<body>
+    <main>
+        <section class="pagar-con-tarjeta">
+            <article>
+                <h2>Pagar</h2>
+                <img src="./img/tarjeta-de-credito.png" alt="Icono Tarjeta de Credito">
+            </article>
+            <article>
+                <p>Tarjetas guardadas</p>
+                <form action="#" method="post">
+                    <select name="tarjeta-guardada" id="tarjeta-guardada">
+                        <option value="" disabled selected hidden>Seleccionar Tarjeta</option>
+                        <option value="1">American Express</option>
+                        <option value="2">Mastercard</option>
+                        <option value="3">Visa</option>
+                    </select>
+                </form>
+                <a href="./misMetodosDePago.html" class="x-pagar"></a>
+            </article>
+            <article>
+                <form action="#" method="post">
+                    <a href="otraTarjeta.html"><input type="checkbox" id="otra-tarjeta" name="otra-tarjeta">
+                        <label for="otra-tarjeta"></label>Otra tarjeta</a>
+                </form>
+            </article>
+            <article>
+                <form action="#" method="post">
+                    <select name="direcciones-guardadas" id="direcciones-guardadas">
+                        <option value="" disabled selected hidden>Seleccionar Direccion</option>
+                        <option value="1">Florencio Varela 1903</option>
+                        <option value="2">Hipólito Yrigoyen 2098</option>
+                        <option value="3">Pres. Juan Domingo Perón 3126</option>
+                    </select>
+                </form>
+            </article>
+            <article>
+                <form action="#" method="post">
+                    <input type="checkbox" name="otra-direccion" id="otra-direccion">
+                    <label for="otra-direccion">Otra direccion</label>
+                </form>
+            </article>
+            <article>
+                <form action="#" method="post">
+                    <input type="submit" value="Pagar" id="pagar-tarjeta">
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

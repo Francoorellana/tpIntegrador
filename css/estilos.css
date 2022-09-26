@@ -85,7 +85,7 @@
     background-image: url(../img/circle-xmark-regular.svg);
     background-size: cover;
     position: absolute;
-    left: 770px;
+    left: 970px;
     bottom: 630px;
 }
 .form-login .x:hover{
@@ -712,7 +712,7 @@ textarea{
     color: #fff;
     position: relative;
     bottom: 100px;
-    left: 450px;
+    left: 650px;
     padding: 16px;
     width: fit-content;
 }
@@ -965,4 +965,130 @@ textarea{
     color: #fff;
     transition: all 0.3s;
     opacity: 0.8;
+}
+
+.pagar-con-tarjeta{
+    position: absolute;
+    border-radius: 10px 10px;
+    border: 2px solid #0e502a;
+    background-color: #018039;
+    box-sizing: border-box;
+    box-shadow: 7px 13px 37px #000;
+    width: 340px;
+    height: 350px;
+    color: #fff;
+    padding: 20px;
+    margin-left: 40%;
+    margin-top: 300px;
+}
+.pagar-con-tarjeta img{
+    width: 20px;
+}
+.x-pagar{
+    width: 40px;
+    height: 40px;
+    background-color: #0e502a;
+    border-radius: 50%;
+    transition: all 0.5s;
+    background-image: url(../img/circle-xmark-regular.svg);
+    background-size: cover;
+    position: absolute;
+    left: 310px;
+    top: -10px;
+}
+.x-pagar:hover{
+    background-color: #fff;
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+#tarjeta-guardada{
+    width: 98%;
+    height: 30px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pagar-con-tarjeta a{
+    text-decoration: none;
+    color: #fff;
+}
+#otra-tarjeta{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#direcciones-guardadas{
+    width: 98%;
+    height: 30px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#otra-direccion{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#pagar-tarjeta{
+    cursor: pointer;
+    width: 30%;
+    background-color: #0e502a;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin-left: 64%;
+    font-size: 16px;
+}
+#pagar-tarjeta:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all 0.6s;
+}
+.pagar-con-tarjeta2{
+    position: absolute;
+    border-radius: 10px 10px;
+    border: 2px solid #0e502a;
+    background-color: #018039;
+    box-sizing: border-box;
+    box-shadow: 7px 13px 37px #000;
+    width: 340px;
+    height: 550px;
+    color: #fff;
+    padding: 20px;
+    margin-left: 40%;
+    margin-top: 200px;
+}
+.pagar-con-tarjeta2 img{
+    width: 20px;
+}
+#pagar-tarjeta2{
+    cursor: pointer;
+    width: 30%;
+    background-color: #0e502a;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin-left: 64%;
+    font-size: 16px;
+}
+#pagar-tarjeta2:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all 0.6s;
+}
+#tarjeta-guardada2{
+    width: 95%;
+    height: 30px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
