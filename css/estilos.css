@@ -144,15 +144,7 @@
     color: #fff;
     padding:10px 10px;
 }
-.carrousel-principal{
-    background-color: #fff;
-    border-bottom: 1px solid black;
-    text-align: center;
-}
-.carrousel-principal img{
-    width: 98%;
-    height: 300px;
-}
+
 .categorias{
     background-color: #fff;
     margin: 80px;
@@ -186,90 +178,30 @@
 
 }
 
-.mas-vendidos h2{
-    background-color: #fff;
-    padding: 15px 0px 15px 0px;
+.mas-vendidos-title{
     text-align: center;
-    text-decoration: underline;
 }
-
-.mas-vendidos ul{
+.mas-vendidos {
     display:flex;
     justify-content: space-evenly;
     padding: 5px;
-    margin-bottom: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
-.mas-vendidos li{
-    height: 150px;
-    width: 150px;
-    list-style: none;
-    padding: 60px;
-    border: 2px solid grey;
-    border-radius: 5px;
-}
-.mas-vendidos  p{
-    text-decoration: none;
-    color: black;
-    padding: 5px 5px;
-    background-color: grey;
-    position: relative;
-    top: 100px;
-    left: 150px;
-    font-weight: bold;
-    font-size: 125%;
-    width: max-content;
-    border-radius: 5px;
-}
-.mas-vendidos label{
-    background-color: white;
-    position: relative;
-    top: 150px;
-    padding: 2px;
-    font-size: larger;
-}
-.mas-vendidos i{
-    color:black;
-}
-.mas-vendidos .menu1{
-    background-image: url(../img/tartas1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-.mas-vendidos  .menu2{
-    background-image: url(../img/viandas-saludables-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-.mas-vendidos  .menu3{
-    background-image: url(../img/menu-semanal1.JPG);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .metodos-pago{
-    background-color: #fff;
-    text-align: center;
-    margin: 80px;
-}
-.metodos-pago h2{
-    padding: 15px 0px 15px 0px;
-    text-decoration: underline;
+    margin-bottom: 6em;
 }
 .footer-main{
     position: absolute;
     bottom: 0;
+    margin-top: 100px;
     width: 100%;
 }
 .footer-principal{
     background-color: #018039;
     color: #fff;
-    
-    height: 80px;
     display: flex;
-    margin-top: 15px;
     padding-top: 15px;
     justify-content: space-around;
 }
