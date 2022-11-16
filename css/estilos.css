@@ -148,7 +148,10 @@
     color: #fff;
     padding:10px 10px;
 }
-
+.material-icons{
+    color: white;
+    padding: 1.5rem;
+}
 .categorias{
     background-color: #fff;
     margin: 80px;
