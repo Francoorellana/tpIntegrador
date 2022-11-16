@@ -47,24 +47,7 @@
 .form-login div{
     text-align: center;
     margin: 40px;
-}/*
-.form-login a{
-    text-decoration: none;
-    border: 2px solid grey;
-    background-color: #018039;
-    color: white;
-    padding: 7px;
-    margin: 10px;
-    border-radius: 5px;
 }
-.form-login a:hover{
-    background-color: #018039;
-    box-shadow: 7px 13px 37px #000;
-    border: 5px #018039 outset;
-    color: #fff;
-    transition: all 0.3s;
-    opacity: 0.8;
-}*/
 .form-login .titulo{
     width: auto;
 }
@@ -663,36 +646,6 @@ textarea{
     padding: 16px;
     width: fit-content;
 }
-/*.titulo-parrafo{
- 
-    margin-left: 900px;
-    margin-top: -290px;
-    margin-bottom: 200px;
-    padding: 5px;
-    border-radius: 6px;
-    width: 400px;
-    height: 150px;
-}
-.titulo-parrafo:hover{
-    background-color: #01803893;
-    transition: all 0.3s;
-    box-shadow: 7px 13px 37px #000;
-    opacity: 0.8;
-    border: 5px #018039 outset;
-    color: #fff;
-}
-.titulo-parrafo h2{
-    margin-bottom: 20px;
-    margin-right: 20px;
-    text-decoration: underline;
-    text-align: center;
-}
-.info-producto{
-    margin-top: 250px;
-    margin-left: 900px;
-    border-radius: 6px;
-    box-sizing: border-box;
-}*/
 .input-info{
     width: 20%;
     border-radius: 7px;
@@ -1073,10 +1026,8 @@ textarea{
     border: 1px solid red;
 }
 
-@media (max-width: 767px){
-    *{
-        overflow-x: hidden; 
-    }
+@media screen and (max-width: 767px){
+
     body{
         display: flex;
         flex-direction: column;
@@ -1099,10 +1050,17 @@ textarea{
         box-sizing: border-box;
     }
 
-    input{
-        display: none;
+    .contenedor-principal input{
+        width: 70%;
+        text-align: center;
     }
-    
+
+    .menu-principal ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
     .carrousel-principal{
         display: flex;
     }
@@ -1124,6 +1082,10 @@ textarea{
         margin: 2em;
     }
 
+    .categorias a{
+        width: 85%;
+    }
+
     .mas-vendidos ul{
         display: flex;
         flex-direction: column;
@@ -1132,13 +1094,383 @@ textarea{
     }
 
     .mas-vendidos li{
-        width: 30em;
+        width: 90%;
         box-sizing: border-box;
         margin: 2em;
     }
     
-    /* .mas-vendidos label{
-        display: flex;
-    } */
+    .mas-vendidos p{
+        text-align: center;
+        top: 10px;
+        left: 200px;
+        background-color: #fff;
+    } 
 
+    .mas-vendidos label{
+        top: 20px;
+    }
+
+    .footer-main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .footer-principal{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 130px;
+        
+    }
+
+    .footer-principal .logo-index{
+        display: flex;
+    }
+
+    .footer-p{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-ul{
+        display: flex;
+        margin-top: 50px;
+    }
+    
+    .footer-redes{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+    }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+        box-sizing: border-box;
+    }
+    img{
+        max-width: 100%;
+    }
+
+    .contenedor-principal{
+        display: flex;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+    }
+
+    .contenedor-principal input{
+        width: 70%;
+        text-align: center;
+    }
+    
+
+    .menu-principal ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+
+
+    .carrousel-principal{
+        display: flex;
+    }
+
+    .categorias{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .categorias article{
+        width: 40em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin: 2em;
+    }
+
+    .categorias a{
+        width: 85%;
+    }
+
+    .mas-vendidos ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .mas-vendidos li{
+        width: 90%;
+        box-sizing: border-box;
+        margin: 2em;
+    }
+    
+    .mas-vendidos p{
+        text-align: center;
+        top: 10px;
+        left: 200px;
+        background-color: #fff;
+    } 
+
+    .mas-vendidos label{
+        top: 20px;
+    }
+
+    .footer-main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .footer-principal{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 130px;
+        
+    }
+
+    .footer-principal .logo-index{
+        display: flex;
+    }
+
+    .footer-p{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-ul{
+        display: flex;
+        margin-top: 50px;
+    }
+    
+    .footer-redes{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+    }
+}
+
+@media screen and (max-width: 667px){
+    body{
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 0.8em;
+        box-sizing: border-box;
+    }
+    img{
+        max-width: 100%;
+    }
+
+    .contenedor-principal{
+        display: flex;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+    }
+
+    .contenedor-principal input{
+        width: 70%;
+        text-align: center;
+    }
+    
+
+    .menu-principal ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+
+
+    .carrousel-principal{
+        display: flex;
+    }
+
+    .categorias{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .categorias article{
+        width: 40em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin: 2em;
+    }
+
+    .categorias a{
+        width: 80%;
+    }
+
+    .mas-vendidos ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .mas-vendidos li{
+        width: 90%;
+        box-sizing: border-box;
+        margin: 2em;
+    }
+    
+    .mas-vendidos p{
+        text-align: center;
+        top: 10px;
+        left: 130px;
+        background-color: #fff;
+    } 
+
+    .mas-vendidos label{
+        top: 30px;
+    }
+
+    .metodos-pago{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0-5em;
+        margin: 10em;
+    }
+
+    .metodos-pago img{
+        max-width: 100%;
+    }
+
+    .footer-main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-principal{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 150px;
+        width: 100%;
+    }
+
+    .footer-principal .logo-index{
+        display: flex;
+        
+    }
+
+    .footer-p{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-ul{
+        display: flex;
+        margin-top: 50px;
+        
+    }
+    
+    .footer-redes{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .portadaCategorias ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .portadaCategorias p{
+        color: #fff;
+        background-color: #018039;
+        text-align: center;
+        text-decoration: none;
+        top: 50px;
+}
+
+    .portadaCategorias a{
+        text-decoration: none;
+    }
+
+    .categoriaProducto label, input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        top: 90px;
+        right: 55px;
+        
+    }
+
+    .categoriaProducto li{
+        margin-bottom: 80px;
+    }
+
+    .tartas-flex{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 2em;
+    }
+
+    .tartas-flex article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+        margin-bottom: 20px;
+    }
+
+    .vista-producto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .contacto2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-bottom: 190px;
+    }
+
+    .maps{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-bottom: 80px;
+    }
+}
+
+

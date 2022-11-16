@@ -118,7 +118,7 @@ function guardarUsuarios(){
   }
 }
 
-
+//4)pop up
 let popup = document.getElementById("popup");
 let numeroTarjeta = document.getElementById('nroTarjeta');
 
@@ -147,9 +147,6 @@ function verificarPass(){
     let password = document.formPass.password.value
     let password2 = document.formPass.password2.value
 
-    // let RegExp = /^([A-Z]+[A-z]+[0-9][a-zA-Z0-9]{8,})$/;
-    // ej password : Aa12345678s12
-    
     if(password != password2){
         alert("Las contraseñas son distintas. Reingrese contraseñas");
     }
@@ -160,91 +157,3 @@ function verificarPass(){
     
 }
 
-
-
-/*
-const getContador = () => {
-    const cont = localStorage.getItem("contador")
-    return cont
-  }
-  
-const setContador = () => {
-      localStorage.setItem("contador",contadorDeProductos)
-  }
-  
-const inicilizarContador = () => {
-    if (getContador() != null) {
-        contadorDeProductos = getContador()
-    }
-  }
-  console.log(getContador())
-  // inicia
-  inicilizarContador()
-
-  boton_limpiar.addEventListener('click', () => {
-    limpiarTodo()
-  })
-  
-lista_tareas.addEventListener('click', (event) => {
-    if(event.path[0].type == 'submit') {
-      eliminarTarea(event.path[1].id)
-    }
-  })
-  
-lista_tareas.addEventListener('keypress', (event) => {
-    if (event.keyCode == 13) {
-      editarTarea(event.path[1].id, event.path[0].value)
-    }
-  })
-  const limpiarTodo = () => {
-    arregloTareas = []
-    contador = 0
-    setArregloTareas()
-    setContador()
-  }
-  const eliminarTarea = (idTarea) => {
-    let datos = getArregloTareas()
-    let newArreglo = []
-    if (datos != null) {
-      for (const tarea of datos) {
-        if (tarea.id != idTarea) {
-          newArreglo.push(tarea)
-        }
-      }
-    }
-    arregloTareas = newArreglo
-    setArregloTareas()
-
-      var arregloTareas = []  
-
-  
-  const getArregloTareas = () => {
-    setContador()
-    const arreglo = JSON.parse(localStorage.getItem("arregloTareas"))
-    return arreglo
-  }
-  
-  const setArregloTareas = () => {
-    localStorage.setItem("arregloTareas",JSON.stringify(arregloTareas))
-    listarTareas()
-  }
-  
-  }
-  const listarTareas = () => {
-    lista_tareas.innerHTML = ''
-    let datos = getArregloTareas()
-    if (datos != null) {
-      for (const tarea of datos.reverse()) {
-        lista_tareas.innerHTML += `
-          <li id="${tarea.id}">
-              <input type="text" class="input-tarea" value="${tarea.descripcion}">  
-              <button class="boton-eliminar">X</button>
-          </li>
-        `
-      }
-    }
-  }
-
-  inicia
-    listarTareas()
-  */
