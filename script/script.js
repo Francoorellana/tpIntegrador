@@ -61,7 +61,7 @@ const productos = [
     },
 ]
 
-
+//1)persistir carrito en localstorage
 const agregarAlCarrito = document.getElementsByName("agregar");
 const productosEnCarrito = [];
 const mostrarCantidadDeProductosEnCarrito = document.getElementById("cantidadDeProductos");
@@ -77,8 +77,10 @@ agregarAlCarrito.forEach((item)=>{
     })
 });
 
+//2)habiligar boton login
+const botonLogin = document.getElementById("loguearse");
 function habilitarLogin() {
-    var botonLogin = document.getElementById("loguearse");
+    
     botonLogin.setAttribute("disabled", "true");
     var formulario = document.querySelector(".form-login");
     formulario.addEventListener("change",(e)=>{
@@ -87,24 +89,43 @@ function habilitarLogin() {
 }
 habilitarLogin();
 
-localStorage.setItem("Usuarios", JSON.stringify(usuario))
-const usuariosLogueados = JSON.parse(localStorage.getItem("Usuarios"))
+//3)guardar usuario en ls
+const usuariosLogueados = []
+const contador = 0
+
+function guardarUsuarios(){
+  
+  const getUsuariosLogueados = () => {
+    const arrayUsuarios = JSON.parse(localStorage.getItem("Usuarios"))
+    return arrayUsuarios
+  }
+
+  const setUsuariosLogueados = () => {
+    localStorage.setItem("Usuarios",JSON.stringify(usuariosLogueados))
+  }
+
+  const agregarUsuario = (nombre) => {
+    contador++
+    let newUsuario = {
+      id: contador,
+      nombre: nombre
+    }
+    if (getUsuariosLogueados() != null) {
+      arrayUsuarios = getUsuariosLogueados()
+    }
+    arrayUsuarios.push(newUsuario)
+    setUsuariosLogueados()
+  }
+}
+
 
 let popup = document.getElementById("popup");
 let numeroTarjeta = document.getElementById('nroTarjeta');
-
-// let arrayNumTarjeta = [numeroTarjeta];
-
-
 
 
 function openPopup(){
     popup.classList.add("popup");
 }
-
-// function closePopup(){
-//     popup.classList.remove("popup");
-// }
 
 
 numeroTarjeta.addEventListener('numeroTarjeta', function(){
@@ -121,8 +142,6 @@ function NoCero(){
         document.getElementById('mensaje').innerHTML = "Nro de tarjeta válido."
     }
 }
-
-
 
 function verificarPass(){
     let password = document.formPass.password.value
@@ -141,17 +160,6 @@ function verificarPass(){
     
 }
 
-
-    
-    /*login.addEventListener("change",()=>{
-        if (nombreUsuario && contraseña) {
-            document.getElementById('loguearse').disabled = false;
-        } else {
-            document.getElementById('loguearse').disabled = true;
-        }
-    })
-  */
-   
 
 
 /*
