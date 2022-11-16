@@ -77,6 +77,82 @@ agregarAlCarrito.forEach((item)=>{
     })
 });
 
+function habilitarLogin() {
+    var botonLogin = document.getElementById("loguearse");
+    botonLogin.setAttribute("disabled", "true");
+    var formulario = document.querySelector(".form-login");
+    formulario.addEventListener("change",(e)=>{
+        botonLogin.removeAttribute("disabled");
+    })
+}
+habilitarLogin();
+
+localStorage.setItem("Usuarios", JSON.stringify(usuario))
+const usuariosLogueados = JSON.parse(localStorage.getItem("Usuarios"))
+
+let popup = document.getElementById("popup");
+let numeroTarjeta = document.getElementById('nroTarjeta');
+
+// let arrayNumTarjeta = [numeroTarjeta];
+
+
+
+
+function openPopup(){
+    popup.classList.add("popup");
+}
+
+// function closePopup(){
+//     popup.classList.remove("popup");
+// }
+
+
+numeroTarjeta.addEventListener('numeroTarjeta', function(){
+    if(this.value.length == 10)
+    this.value = this.value.slice(1,10);
+});
+
+
+function NoCero(){
+    if(document.getElementById('nroTarjeta').value == 0){
+        document.getElementById('mensaje').innerHTML = "El nro de tarjeta no puede ser cero."
+        
+    }else{
+        document.getElementById('mensaje').innerHTML = "Nro de tarjeta válido."
+    }
+}
+
+
+
+function verificarPass(){
+    let password = document.formPass.password.value
+    let password2 = document.formPass.password2.value
+
+    // let RegExp = /^([A-Z]+[A-z]+[0-9][a-zA-Z0-9]{8,})$/;
+    // ej password : Aa12345678s12
+    
+    if(password != password2){
+        alert("Las contraseñas son distintas. Reingrese contraseñas");
+    }
+    
+    if(!(password.length >= 8 && password2.length >=8)){
+        alert("Contraseña debe tener un minimo de 8 caracteres");
+    }
+    
+}
+
+
+    
+    /*login.addEventListener("change",()=>{
+        if (nombreUsuario && contraseña) {
+            document.getElementById('loguearse').disabled = false;
+        } else {
+            document.getElementById('loguearse').disabled = true;
+        }
+    })
+  */
+   
+
 
 /*
 const getContador = () => {
