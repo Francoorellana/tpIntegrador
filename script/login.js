@@ -1,44 +1,47 @@
 const botonLogin = document.getElementById('loguearse');
-const valorIngresado = document.getElementById("nombre");
-
-const usuariosLogueados =  JSON.parse(localStorage.getItem("usuariosLogueados")) || [];
+const usuariosLogueados = JSON.parse(localStorage.getItem("usuariosLogueados")) || [];
+var nombreI = document.querySelector("#usuario");
+var passwordI = document.querySelector("#contraseña");
 
 //2)habiligar boton login
 
 function habilitarLogin() {
-  
-  botonLogin.setAttribute("disabled", "true");
-  var formulario = document.querySelector(".form-login");
-  formulario.addEventListener("change", (e) => {
-    botonLogin.removeAttribute("disabled");
-  })
+  let contador = 0;
+  if(nombreI.value == ""){
+    contador++;
+  }
+  if(passwordI.value == ""){
+    contador++;
+  }
+  if(contador == 0){
+    botonLogin.disabled = false;
+  }else{
+    botonLogin.disabled = true;
+  }
+ 
 }
+nombreI.addEventListener("keyup",habilitarLogin)
+passwordI.addEventListener("keyup",habilitarLogin)
 
-function logicaGuardado(nombreIngresado,passwordIngresada){
-  
+//guardando users
+function logicaGuardado() {
+
   var nuevoUsuario = {
-    nombre: nombreIngresado,
-    contraseña: passwordIngresada
+    nombre: nombreI.value,
+    contraseña: passwordI.value
   };
   console.log(nuevoUsuario);
   usuariosLogueados.push(nuevoUsuario);
-  
+
 }
-
-
 botonLogin.addEventListener("click", () => {
-  var nombreI = document.querySelector("#usuario").value
-  var passwordI = document.querySelector("#contraseña").value
 
-  logicaGuardado(nombreI,passwordI);
+  logicaGuardado();
   estadoUsers();
+
 })
- 
 
 const estadoUsers = () => {
-  localStorage.setItem("usuariosLogueados",JSON.stringify(usuariosLogueados));
+  localStorage.setItem("usuariosLogueados", JSON.stringify(usuariosLogueados));
 }
-
-habilitarLogin();
-
 
