@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,27 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Login</title>
 </head>
+
 <body>
     <header class="inicioLogin">
         <h3>Bienvenido/a a Fresh Market</h3>
     </header>
-    <section >
+    <section>
         <article class="form-login">
-            <form action="#" method="post" >
+            <form action="#" method="post">
                 <img src="./img/Logo.jpeg" alt="logo" class="logo">
-                <label for="usuario" >Usuario:</label>
-                <input type="text" id="usuario" name="usuario" placeholder="Ingrese usuario" >
-                <label for="contraseña" >Contraseña:</label>
-                <input type="text" id="contraseña" name="contraseña"  placeholder="Ingrese contraseña" >
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingrese usuario">
+                <label for="contraseña">Contraseña:</label>
+                <input type="text" id="contraseña" name="contraseña" placeholder="Ingrese contraseña">
                 <p>Olvidaste la contraseña?</p>
-                <input type="submit" id="loguearse" value="LOGIN" onclick="guardarUsuarios()">
-                
-                <p>¿No tenes cuenta? <a href="./crearCuenta.html" >Registrate</a></p>
-              </form> 
+                <input type="button" id="loguearse" value="LOGIN">
+
+                <p>¿No tenes cuenta? <a href="./crearCuenta.html">Registrate</a></p>
+            </form>
         </article>
     </section>
-    <script src="./script/script.js"></script>
+    <script src="./script/login.js"></script>
 </body>
+
 </html>
