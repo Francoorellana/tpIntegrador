@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="https://kit.fontawesome.com/cf6a7ffcdc.js" crossorigin="anonymous"></script>
     <title>Categorias</title>
@@ -13,23 +13,21 @@
 <body class="body-index">
     <header>
         <section class="contenedor-principal">
-            <article>
-                <a href="./index.html"><img src="./img/Logo.jpeg" alt="logo"></a>
-            </article>
-            <article>
-                <input type="text" placeholder="Buscador...">
-            </article>
-            <article>
-                <a href="./carrito.html" class="material-icons">
-                        shopping_cart
-                </a>
+            <article >            
+            <a href="./index.html"><img src="./img/Logo.jpeg" alt="logo" >    </a>         
+        </article>
+        <article >
+            <input type="text" id="buscar" placeholder="Buscador...">
+        </article>
+        <article >
+            <a href="./carrito.html"><span class="material-icons">
+                shopping_cart
+                </span></a>
                 <span id="cantidadDeProductos"></span>
-
-        
-            </article>
+            </article>    
         </section>
-      
-     
+    
+    
     </header>
     <nav class="menu-principal">
         <ul >
@@ -53,16 +51,16 @@
                 <h1>CATEGORÍAS</h1>
             </article>
         </section>
-        <section >
-            <article class="portadaCategorias">
-                <ul >
-                    <li class="tartas">
-                       <a href="../tpIntegrador/categoriaTartas.html"><p >TARTAS</p></a> 
+        <section>
+            <article class="portadaCategorias" id="articulo">
+                <ul id="listaCategorias">
+                    <li class="claseCategoria tartas">
+                    <a href="../tpIntegrador/categoriaTartas.html"><p >TARTAS</p></a> 
                     </li>
-                    <li class="viandas">
+                    <li class="claseCategoria viandas">
                         <a href="./categoriaViandas.html"><p >VIANDAS</p></a>
                     </li>
-                    <li class="menuSemanal">
+                    <li class="claseCategoria menuSemanal">
                         <a href="./categoriaMenues.html"><p >MENU SEMANAL</p></a>
                         
                     </li>
@@ -74,7 +72,7 @@
         <section class="footer-principal">
                 <article>
                     <a href="./index.html"><img src="./img/Logo.jpeg" alt="logo" class="logo-index"></a>
-                    <p>Horarios de atencion: <br>
+                    <p class="footer-p">Horarios de atencion: <br>
                         Lunes a Viernes 8hs a 21hs</p>
                     
                 </article>
@@ -91,12 +89,11 @@
                     <a href="https://es-la.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
                     <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                     <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                 
+                
                 </article>
         </section> 
     </footer>
-    <script src="./script/favoritos.js"></script>
-    <script src="./script/script.js"></script>
 
+    <script src="./script/valuesCarrito.js"></script>
 </body>
 </html>
