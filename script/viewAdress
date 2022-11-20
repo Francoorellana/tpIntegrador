@@ -1,0 +1,19 @@
+const direccionesActuales = document.getElementById("tablaDirecciones");
+const direcciones = JSON.parse(localStorage.getItem("direcciones"))  || [];
+
+
+direcciones.forEach((dir) => {
+    direccionesActuales.innerHTML = `
+    <tbody >                         
+    <thead> <tr> <th>Alias</th> <th>Direccion</th> </tr> </thead> 
+    <tr> <td>${dir.alias}</td> <td>${dir.direccion} <i class="fa-regular fa-trash-can eliminar" style="cursor: pointer;"></i></tr> </td>
+    </tbody> 
+    `;
+    
+    
+});
+
+console.log(direcciones);
+/*
+
+*/
