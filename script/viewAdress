@@ -1,17 +1,23 @@
-const direccionesActuales = document.getElementById("tablaDirecciones");
+const direccionesActuales = document.querySelector("#tablaDirecciones").innerHTML;
 const direcciones = JSON.parse(localStorage.getItem("direcciones"))  || [];
 
-
+function mostrarDirecciones() {
+    let cuadroDirecciones = document.createElement("div");
 direcciones.forEach((dir) => {
-    direccionesActuales.innerHTML = `
+
+    
+
+    cuadroDirecciones.innerHTML = `
     <tbody >                         
     <thead> <tr> <th>Alias</th> <th>Direccion</th> </tr> </thead> 
     <tr> <td>${dir.alias}</td> <td>${dir.direccion} <i class="fa-regular fa-trash-can eliminar" style="cursor: pointer;"></i></tr> </td>
     </tbody> 
     `;
     
-    
+    direccionesActuales.append(cuadroDirecciones);
 });
+    
+}
 
 console.log(direcciones);
 /*
