@@ -21,3 +21,4 @@ const favoritos = [
         img: "https://www.rionegro.com.ar/wp-content/uploads/2020/01/80090598_173536923735177_5788704723463929467_n-1.jpg?resize=467,517"
     },
 ]
+
