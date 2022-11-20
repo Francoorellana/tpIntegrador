@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="https://kit.fontawesome.com/cf6a7ffcdc.js" crossorigin="anonymous"></script>
     <title>Mi cuenta</title>
@@ -14,20 +14,21 @@
     <header>
         <section class="contenedor-principal">
             <article >            
-               <a href="./index.html"><img src="./img/Logo.jpeg" alt="logo" >    </a>         
-        </article>
-        <article >
-            <input type="text" placeholder="Buscador...">
-        </article>
-        <article >
-            <a href="./carrito.html"><span class="material-icons">
-                shopping_cart
-                </span></a>
+                <a href="./index.html"><img src="./img/Logo.jpeg" alt="logo" >    </a>         
+            </article>
+            <article >
+                <input type="text" placeholder="Buscador...">
+            </article>
+            <article >
+                <a href="./carrito.html"><span class="material-icons">
+                    shopping_cart
+                    </span></a>
+                    <span id="cantidadDeProductos"></span>
             
-        </article>    
+            </article>    
         </section>
-      
-     
+    
+    
     </header>
     <nav class="menu-principal">
         <ul >
@@ -41,7 +42,7 @@
                 <a href="./contacto.html">Contacto</a>
             </li>
             <li>
-                <a href="#inicioMiCuenta">Mi cuenta</a>
+                <a href="./miCuenta.html">Mi cuenta</a>
             </li>
         </ul>
     </nav>
@@ -55,11 +56,11 @@
         <section >
             <article class="form-cuentas">
                 <h1>Mis direcciones</h1>
-                <a href="./direcciones.html"><input type="button" value="Agregar"></a>
+                <a href="./direcciones.html"><input type="button" value="Agregar" class="agregar"></a>
                 
-                <table> <thead> <tr> <th>Alias</th> <th>Direccion</th> </tr> </thead> 
-                    <tbody> <tr> <td>Direccion 1:</td> <td>Florencio Varela 1903<i class="fa-regular fa-trash-can"></i></td> </tr> 
-                            <tr> <td>Direccion 2:</td> <td>Av. Pres. Dr. Arturo Umberto Illia 1755<i class="fa-regular fa-trash-can"></i></td> </tr> 
+                <table id="tabla"> <thead> <tr> <th>Alias</th> <th>Direccion</th> </tr> </thead> 
+                    <tbody > <tr> <td>Direccion 1:</td> <td>Florencio Varela 1903<i class="fa-regular fa-trash-can eliminar" style="cursor: pointer;"></i></td> </tr> 
+                            <tr> <td>Direccion 2:</td> <td>Av. Pres. Dr. Arturo Umberto Illia 1755<i class="fa-regular fa-trash-can eliminar" style="cursor: pointer;"></i></td> </tr> 
                     </tbody> 
                 </table>
             </article>
@@ -68,16 +69,16 @@
         <section >
             <article class="form-cuentas">
                 <h1>Mis Metodos de Pago</h1>
-                <a href="./misMetodosDePago.html"><input type="button" value="Agregar"></a>
-                <table> <thead> <tr> <th>Alias</th> </tr> </thead> 
-                    <tbody> <tr> <td>Visa Credito <i class="fa-regular fa-trash-can"></i></td> </tr> 
-                            <tr> <td>Cabal <i class="fa-regular fa-trash-can"></i></td> </tr> 
+                <a href="./pagar.html"><input type="button" value="Agregar" class="agregar"></a>
+                <table id="tablaPago" name="tarjeta-guardada"> <thead> <tr> <th>Alias</th> </tr> </thead> 
+                    <tbody> <tr> <td>Visa Credito <i class="fa-regular fa-trash-can eliminar" style="cursor: pointer;"></i></td> </tr> 
+                            <tr> <td>Cabal <i class="fa-regular fa-trash-can eliminar" style="cursor: pointer;"></i></td> </tr> 
                     </tbody> 
                 </table>
             </article>
         </section>
     </main>
-    <footer class="footer-main">
+    <footer >
         <section class="footer-principal">
                 <article>
                     <a href="./index.html"><img src="./img/Logo.jpeg" alt="logo" class="logo-index"></a>
@@ -98,10 +99,11 @@
                     <a href="https://es-la.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
                     <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                     <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                 
+                
                 </article>
         </section> 
     </footer>
-
+    <script src="./script/valuesCarrito.js"></script>
+    <script src="./script/miCuenta.js"></script>
 </body>
 </html>
