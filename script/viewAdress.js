@@ -6,14 +6,20 @@ for (i = 0; i < direcciones.length; i++) {
         direccionesActuales.innerHTML += `
         <tbody >                         
         
-        <tr> <td>${direcciones[i].alias}</td> <td>${direcciones[i].direccion} <i class="fa-regular fa-trash-can eliminar" style="cursor: pointer;"></i></tr> </td>
+        <tr> <td>${direcciones[i].alias}</td> <td>${direcciones[i].direccion} </td> <td><i id="eliminar" class="fa-regular fa-trash-can eliminar" style="cursor: pointer;"></i> </td> </tr> 
         </tbody> 
         `
-        
+
     }
-        
-    
 }
 
 
-
+const botonEliminar = document.getElementById("eliminar");
+if(botonEliminar != null){
+    botonEliminar.addEventListener("click", () => {
+        let newData = direcciones.filter(item => item.alias !== direcciones.alias)
+        console.log(newData);
+        /*localStorage.setItem('data', JSON.stringify(newData));
+        setProducts(newData)*/
+    })
+}

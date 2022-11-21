@@ -3,11 +3,16 @@ const botonGuardar = document.getElementById('boton-guardar');
 var alias = document.querySelector("#alias");
 var direccion = document.querySelector("#direccion");
 
+var contador = "";
+contador = direcciones.length;
+
+
 
 //guardando direccion
 function logicaGuardado() {
-
+  
   var nuevaDireccion = {
+    id : contador,
     alias: alias.value,
     direccion: direccion.value
   };
