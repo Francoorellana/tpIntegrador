@@ -80,39 +80,6 @@
 
  /* Index.html */
 
-.body-index{
-    background-image: none;
-    position: relative;
-    padding-bottom: 100px;
-    min-height: 100vh;
-}
-.material-icons{
-    padding: 1.5rem;
-    color: #fff;
-}
-.contenedor-principal{
-    background-color: #018039;
-    height: 80px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-}
-.contenedor-principal img{
-    height: 75px;
-    width: 128px;
-    border-radius: 7px;
-}
-.contenedor-principal input{
-    width: 800px;
-    height: 45px; 
-    margin-top: 10px;
-    border-radius: 7px;
-}
-.contenedor-principal span{
-    height: 45px; 
-    margin: 25px 30px 0px 0px;
-    color: rgba(255, 255, 255, 1);
-}
 .menu-principal{
     background-color: #018039;
     height: 30px;
@@ -186,24 +153,7 @@
 }
 
 
-.footer-principal img{
-    height: 60px;
-    width: 100px;
-    border-radius: 7px;
-    text-align: left;
-    margin: 5px;
-}
-.footer-principal p{
-    position: relative;
-    bottom: 90px;
-    left: 110px;
-    z-index: 1;
-    padding-top: 20px;
-}
-.footer-principal a{
-    color: #fff;
-    text-decoration: none;
-}
+
 .tarjeta{
     
     position: absolute;
@@ -1005,9 +955,9 @@ textarea{
 }
 
 
-@media screen and (max-width: 767px){
-
+@media screen and (max-width: 667px){
     body{
+        overflow-x: hidden;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -1015,7 +965,7 @@ textarea{
         text-align: center;
         margin: 0;
         padding: 0;
-        font-size: 1em;
+        font-size: 0.8em;
         box-sizing: border-box;
     }
     img{
@@ -1024,7 +974,6 @@ textarea{
 
     .contenedor-principal{
         display: flex;
-        flex-direction: column;
         flex-wrap: nowrap;
         box-sizing: border-box;
     }
@@ -1033,17 +982,39 @@ textarea{
         width: 70%;
         text-align: center;
     }
+    
 
     .menu-principal ul{
         display: flex;
         flex-direction: row;
         align-items: center;
-    }
+}
+
 
     .carrousel-principal{
         display: flex;
     }
 
+    .categorias{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .categorias article{
+        width: 40em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin: 2em;
+    }
+
+    .categorias a{
+        width: 80%;
+    }
 
     .mas-vendidos ul{
         display: flex;
@@ -1061,30 +1032,42 @@ textarea{
     .mas-vendidos p{
         text-align: center;
         top: 10px;
-        left: 200px;
+        left: 130px;
         background-color: #fff;
     } 
 
     .mas-vendidos label{
-        top: 20px;
+        top: 30px;
+    }
+
+    .metodos-pago{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0-5em;
+        margin: 10em;
+    }
+
+    .metodos-pago img{
+        max-width: 100%;
     }
 
     .footer-main{
         display: flex;
         flex-direction: column;
-        
     }
 
     .footer-principal{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        height: 130px;
-        
+        height: 150px;
+        width: 100%;
     }
 
     .footer-principal .logo-index{
         display: flex;
+        
     }
 
     .footer-p{
@@ -1096,18 +1079,95 @@ textarea{
     .footer-ul{
         display: flex;
         margin-top: 50px;
+        
     }
     
     .footer-redes{
         display: flex;
         flex-direction: row;
-        gap: 0.5em;
+    }
+
+    .portadaCategorias ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .portadaCategorias p{
+        color: #fff;
+        background-color: #018039;
+        text-align: center;
+        text-decoration: none;
+        top: 50px;
+}
+
+    .portadaCategorias a{
+        text-decoration: none;
+    }
+
+    .categoriaProducto label, input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        top: 90px;
+        right: 55px;
+        
+    }
+
+    .categoriaProducto li{
+        margin-bottom: 80px;
+    }
+
+    .tartas-flex{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 2em;
+    }
+
+    .tartas-flex article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+        margin-bottom: 20px;
+    }
+
+    .vista-producto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .contacto2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-bottom: 190px;
+    }
+
+    .maps{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-bottom: 80px;
+    }
+
+    .agregar{
+        cursor: pointer;
     }
 }
     
 @media screen and (min-width: 768px) and (max-width: 2000px){
     body{
-        font-family: Arial, Helvetica, sans-serif;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -1117,23 +1177,42 @@ textarea{
         padding: 0;
         font-size: 1em;
         box-sizing: border-box;
-        
     }
+
     h2{
         padding: 1em;
         text-align: center;
     }
 
 
-    .contenedor-principal{
-        display: flex;
-        flex-wrap: nowrap;
-        box-sizing: border-box;
+    .body-index{
+        background-image: none;
+        position: relative;
+        padding-bottom: 100px;
+        min-height: 100vh;
     }
-
+    .contenedor-principal{
+        background-color: #018039;
+        height: 80px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contenedor-principal img{
+        height: 70px;
+        width: 128px;
+        border-radius: 7px;
+    }
     .contenedor-principal input{
-        width: 70%;
-        text-align: center;
+        width: 800px;
+        height: 45px; 
+        margin-top: 10px;
+        border-radius: 7px;
+    }
+    .contenedor-principal span{
+        height: 45px; 
+        margin: 25px 30px 0px 0px;
+        color: rgba(255, 255, 255, 1);
     }
     
 
@@ -1143,10 +1222,6 @@ textarea{
         align-items: center;
     }
 
-    .carrousel-principal{
-        display: flex;
-    }
- 
     .categorias{
         display: flex;
         flex-direction: row;
@@ -1174,7 +1249,7 @@ textarea{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 5em 0em 5em 0em;
+        margin: 5em 5em 5em 5em;
     }
     .mas-vendidos{
         max-width: 300px;
@@ -1218,18 +1293,31 @@ textarea{
         background-color: #018039;
         position: absolute;
         bottom: 0;
+        padding: 0.8em;
         width:-webkit-fill-available;        
+    }
+    .footer-principal img{
+        height: 60px;
+        width: 100px;
+        border-radius: 7px;
+        text-align: left;
+        margin: 5px;
+    }
+    .footer-principal p{
+        position: relative;
+        bottom: 90px;
+        left: 110px;
+        z-index: 1;
+        padding-top: 20px;
+    }
+    .footer-principal a{
+        color: #fff;
+        text-decoration: none;
     }
     .footer-principal .logo-index{
         display: flex;
     }
 
-    .footer-p{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
     .footer-ul{
         display: flex;
         margin-top: 50px;
@@ -1244,8 +1332,9 @@ textarea{
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 50px 0px 50px 0px;
+        margin: 5em;
         padding: 1rem;
+
         
       }
     .carousel-item {
@@ -1257,4 +1346,22 @@ textarea{
 }
 
 
-
+/*
+.footer-principal img{
+    height: 60px;
+    width: 100px;
+    border-radius: 7px;
+    text-align: left;
+    margin: 5px;
+}
+.footer-principal p{
+    position: relative;
+    bottom: 90px;
+    left: 110px;
+    z-index: 1;
+    padding-top: 20px;
+}
+.footer-principal a{
+    color: #fff;
+    text-decoration: none;
+}*/

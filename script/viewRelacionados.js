@@ -1,12 +1,12 @@
 
 
-function mostrarProductos(){
-    const productoDisponible = document.querySelector("#tipoDeProducto").innerHTML; //tarta
-    productos.forEach((prod) => {
-    
-        let productoRelacionado = document.createElement("div");
-        
-        productoRelacionado.innerHTML = `
+function mostrarProductos() {
+  const productoDisponible = document.querySelector("#tipoDeProducto").innerHTML; //tarta
+  productos.forEach((prod) => {
+
+    let productoRelacionado = document.createElement("div");
+
+    productoRelacionado.innerHTML = `
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         
             <div class="card" >
@@ -16,12 +16,8 @@ function mostrarProductos(){
                 <p class="card-text">${prod.descripcion}</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-            </div>
-    
-            </div>
-    
-    
-        
+            </div>    
+            </div>        
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
@@ -30,18 +26,15 @@ function mostrarProductos(){
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
-    
-            
-        
-        `;
-    
-        if (productoDisponible == prod.tipo) {
-            console.log("ingresa")
-            mostrarRelacionados.append(productoRelacionado);
-        }
-    });
-    
+      </div>        
+      `;
+
+    if (productoDisponible == prod.tipo) {
+      console.log("ingresa")
+      mostrarRelacionados.append(productoRelacionado);
+    }
+  });
+
 }
 
 
