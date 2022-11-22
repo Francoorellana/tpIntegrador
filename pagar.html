@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Pagar</title>
 </head>
-
 <body>
     <main>
         <section class="pagar-con-tarjeta">
@@ -18,20 +16,20 @@
             </article>
             <article>
                 <p>Tarjetas guardadas</p>
-                <form action="#" method="post">
+                <form action="#" method="post" id="formTarjeta" name="tarjeta-guardada">
                     <select name="tarjeta-guardada" id="tarjeta-guardada">
                         <option value="" disabled selected hidden>Seleccionar Tarjeta</option>
-                        <option value="1">American Express</option>
-                        <option value="2">Mastercard</option>
-                        <option value="3">Visa</option>
+                        <option value="1" name="tarjeta-guardada">American Express</option>
+                        <option value="2" name="tarjeta-guardada">Mastercard</option>
+                        <option value="3" name="tarjeta-guardada">Visa</option>
                     </select>
                 </form>
                 <a href="./index.html" class="x-pagar"></a>
             </article>
             <article>
-                <form action="#" method="post">
-                    <a href="otraTarjeta.html"><input type="checkbox" id="otra-tarjeta" name="otra-tarjeta">
-                        <label for="otra-tarjeta"></label>Otra tarjeta</a>
+                <form action="#" method="post" >
+                    <input type="checkbox" id="otra-tarjeta" name="otra-tarjeta" onclick="openPopup()" class="popup">
+                        <label for="otra-tarjeta"></label>Otra tarjeta
                 </form>
             </article>
             <article>
@@ -51,74 +49,73 @@
                 </form>
             </article>
             <article>
-                <form action="#" method="post">
-                    <a href="./index.html"><input type="button" value="Pagar" id="pagar-tarjeta"></a>
+                <form>
+                    <input type="submit" value="Pagar" id="pagar-tarjeta" onclick="agregarFormAMiCuenta()">
                 </form>
             </article>
-        </section>
-        <section class="pagar-con-tarjeta2" id="popup">
-            <article>
-                <h2>Pagar</h2>
-                <img src="./img/tarjeta-de-credito.png" alt="Icono Tarjeta de Credito">
-            </article>
-            <article>
-                <p>Tarjetas guardadas</p>
-                <form action="#" method="post">
-                    <select name="tarjeta-guardada" id="tarjeta-guardada2">
-                        <option value="" disabled selected hidden>Seleccionar Tarjeta</option>
-                        <option value="1">American Express</option>
-                        <option value="2">Mastercard</option>
-                        <option value="3">Visa</option>
-                    </select>
-                </form>
-                <a href="" class="x-pagar2" onclick="closePopup()"></a>
-            </article>
-            <article>
-                <form action="#" method="post">
-                    <input type="checkbox" id="otra-tarjeta" name="otra-tarjeta" checked>
-                    <label for="otra-tarjeta">Otra tarjeta</label>
-                </form>
-            </article>
-            <article>
-                <form action="#" method="post">
-                    <label for="numero-tarjeta">Número de tarjeta</label>
-                    <input class="clase-inputs" type="text" name="Número de tarjeta" id="nroTarjeta"
-                        placeholder="Número" required minlength="10" maxlength="10" onkeyup="NoCero()">
-                    <p id="mensaje"></p>
-                </form>
-            </article>
-            <article class="flex">
-                <form action="#" method="post">
-                    <label for="codigo">Código</label>
-                    <input class="clase-inputs" type="text" name="codigo" placeholder="Cod." required>
-                    <label for="vencimiento">Vencimiento</label>
-                    <input class="clase-inputs" type="text" name="vencimiento" placeholder="Vto" required>
-                </form>
-            </article>
-            <article>
-                <form action="#" method="post">
-                    <label for="titular">Nombre titular</label>
-                    <input class="clase-inputs" type="text" name="titular" placeholder="Nombre titular" required>
-                </form>
-            </article>
-            <article>
-                <form action="#" method="post">
-                    <input type="checkbox" name="otra-direccion" id="otra-direccion">
-                    <label for="otra-direccion">Otra direccion</label>
-                </form>
-            </article>
-            <article>
-                <form action="#" method="post">
-                    <input type="submit" value="Pagar" id="pagar-tarjeta">
-                </form>
-            </article>
-        </section>
+            
+            <section class="pagar-con-tarjeta2" id="popup">
+                <article>
+                    <h2>Pagar</h2>
+                    <img src="./img/tarjeta-de-credito.png" alt="Icono Tarjeta de Credito">
+                </article>
+                <article>
+                    <p>Tarjetas guardadas</p>
+                    <form action="#" method="post">
+                        <select name="tarjeta-guardada" id="tarjeta-guardada2">
+                            <option value="" disabled selected hidden>Seleccionar Tarjeta</option>
+                            <option value="1">American Express</option>
+                            <option value="2">Mastercard</option>
+                            <option value="3">Visa</option>
+                        </select>
+                    </form>
+                    <a href="" class="x-pagar2" onclick="closePopup()"></a>
+                </article>
+                <article>
+                    <form action="#" method="post">
+                        <input type="checkbox" id="otra-tarjeta" name="otra-tarjeta" checked>
+                        <label for="otra-tarjeta">Otra tarjeta</label>
+                    </form>
+                </article>
+                <article>
+                    <form action="#" method="post">
+                        <label for="numero-tarjeta">Número de tarjeta</label>
+                        <input class="clase-inputs" type="text" name="Número de tarjeta" 
+                        id="nroTarjeta" placeholder="Número" required minlength="10" maxlength="10" onchange="NoCero()">
+                        <p id="mensaje"></p>
+                    </form>
+                </article>
+                <article class="flex">
+                    <form action="#" method="post">
+                        <label for="codigo">Código</label>
+                        <input class="clase-inputs" type="text" name="codigo" placeholder="Cod." required>
+                        <label for="vencimiento">Vencimiento</label>
+                        <input class="clase-inputs" type="text" name="vencimiento" placeholder="Vto" required>
+                    </form>
+                </article>
+                <article>
+                    <form action="#" method="post">
+                        <label for="titular">Nombre titular</label>
+                        <input class="clase-inputs" type="text" name="titular" placeholder="Nombre titular" required>
+                    </form>
+                </article>
+                <article>
+                    <form action="#" method="post">
+                        <input type="checkbox" name="otra-direccion" id="otra-direccion">
+                        <label for="otra-direccion">Otra direccion</label>
+                    </form>
+                </article>
+                <article>
+                    <form action="#" method="post">
+                    <input type="button" value="Pagar" id="pagar-tarjeta">
+                    </form>
+                </article>
+            </section>
         </section>
 
-
+        
     </main>
-    <script src="./js/funcionalidades.js"></script>
-    </main>
+    <script src="./script/pagar.js"></script>
+    <script src="./script/miCuenta.js"></script>
 </body>
-
 </html>
