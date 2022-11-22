@@ -7,17 +7,26 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 favoritos.forEach((fav) => {
   let productosMasVendidos = document.createElement("div");
   productosMasVendidos.className = "mas-vendidos";
-  productosMasVendidos.innerHTML = `
-        
-    <img src="${fav.img}" > 
-    <h5 >${fav.nombre}</h5>
-    <p >${fav.descripcion}</p>      
-    `
+  productosMasVendidos.innerHTML = `     
+            <div class="card" >
+                <img src="${fav.img}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">${fav.nombre}</h5>
+                  <p class="card-text">${fav.descripcion}</p>
+                
+                </div>
+            </div>
+    
+       `
+
   mostrarMasVendidos.append(productosMasVendidos);
 
   let botonComprar = document.createElement("button");
-  botonComprar.innerText = "Comprar";
-  mostrarMasVendidos.append(botonComprar);
+  botonComprar.className = "btn btn-primary";
+  botonComprar.innerHTML = `
+    Comprar
+  `
+  productosMasVendidos.append(botonComprar);
 
   botonComprar.addEventListener("click", () => {
     carrito.push({

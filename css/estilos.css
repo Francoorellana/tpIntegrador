@@ -178,11 +178,11 @@
     text-align: center;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-}
+}/*
 .mas-vendidos{
     display: flex;
     justify-content: space-evenly;
-}
+}*/
 .metodos-pago{
     text-align: center;
     padding: 1.5rem;
@@ -1211,6 +1211,9 @@ textarea{
 
     .mas-vendidos label{
         top: 20px;
+    }
+    #productosMayorVenta{
+        display: flex;
     }
     .footer-principal{
         color: #fff;
