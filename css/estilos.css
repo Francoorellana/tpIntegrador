@@ -1,994 +1,52 @@
 /*#018039*/
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
 
-.bodyDirecciones{
-    background-image: url(../img/background-image.jpg);
-    background-repeat: repeat;
-    background-size: cover;
-}
-.inicioLogin h3{
-    text-align: center;
-    border:1px solid #ccc;
-    margin:0.5em;
-    border-radius: 1em;
-    width: 500px;
-    margin: auto;
-    background-color: #018039;
-    color:#fff;
-    padding:1em;
-}
+/*celulares*/
+@media screen and (max-width: 575px){
 
-.form-login p{
-    margin: 25px 0px 25px 0px;
-}
-.form-login{
-    background-color: #fff;
-    width: 500px;
-    height: 600px;
-    margin:auto;
-    margin-top: 10px;
-    border: 3px solid black;
-    border-radius: 1em;
-    font-size: 18px;
-    box-shadow: 10px 15px 40px #fff;
-
-}
-.form-login .logo{
-    height: 260px;
-    border-radius: 1em;
-}
-.form-login input{
-    height: 25px;
-    width: 98%;
-    margin: 5px 0px 10px 0px
-}
-.form-login div{
-    text-align: center;
-    margin: 40px;
-}
-.form-login .titulo{
-    width: auto;
-}
-.form-login select{
-    width: 98%;
-    margin: 5px 0px 10px 0px;
-    height: 25px;
-}
-.form-login span{
-    padding: 0px 10px 0px 10px;
-}
-.form-login .x{
-    width: 30px;
-    height: 30px;
-    background-color: #0e502a;
-    border-radius: 50%;
-    transition: all 0.5s;
-    background-image: url(../img/circle-xmark-regular.svg);
-    background-size: cover;
-    position: absolute;
-    left: 970px;
-    bottom: 630px;
-}
-.form-login .x:hover{
-    background-color: #fff;
-    transform: scale(1.1);
-    transition: all 0.6s;
-}
-
- /* Index.html */
-
-.menu-principal{
-    background-color: #018039;
-    height: 30px;
-    border: 1px solid black;
-    padding: 0px 10px 0px 10px;
-}
-.menu-principal ul{
-    display:flex;
-    justify-content: space-between;
-    padding: 5px;
-
-}
-.menu-principal li{
-    list-style: none;
-}
-.menu-principal a{
-    text-decoration: none;
-    color: #fff;
-    padding:10px 10px;
-}
-.carrousel-principal{
-    background-color: #fff;
-    border-bottom: 1px solid black;
-    text-align: center;
-}
-.carrousel-principal img{
-    width: 98%;
-    height: 300px;
-}/*
-.categorias{
-    background-color: #fff;
-    margin: 50px;
-}
-.categorias h2{
-    background-color: #fff;
-    padding: 5px 0px 5px 0px;
-    text-align: center;
-    text-decoration: underline;
-}
-.categorias article{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 30px;
-    line-height: 100px;
-    text-align: center;
-    vertical-align: middle
-}
-.categorias a{
-    background-color: #018039;
-    width: 25%;
-    margin: 25px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 7px;
-
-}
-.mas-vendidos-title{
-    text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}*/
-.metodos-pago{
-    text-align: center;
-    padding: 1.5rem;
-    margin-bottom: 5rem;
-}
-
-
-
-.tarjeta{
-    
-    position: absolute;
-    top: 450px;
-    left: 500px;
-    z-index: 2;
-    border-radius: 10px 10px 10px 10px;
-    border: 2px solid #0e502a;
-    width: 350px;
-    opacity: 1;
-    box-sizing: border-box;
-    background-color: #018039;
-    color: #fff;
-    margin: auto;
-    padding: 30px;
-    box-shadow: 7px 13px 37px #000;
-    
-}
-
-.tarjeta h2{
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-.clase-inputs{
-    width: 90%;
-    padding: 5px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid;
-    font-size: 18px;
-}
-.tarjeta .boton{
-    width: 30%;
-    background-color: #0e502a;
-    border-radius: 4px;
-    border: none;
-    padding: 10px;
-    color: #fff;
-    margin-left: 64%;
-    font-size: 16px;
-}
-.tarjeta .boton:hover{
-    background-color: #fff;
-    color: #000;
-    transition: all 0.6s;
-}
-.tarjeta .flex{
-    display: flex;
-    gap: 10px;
-    margin-right: 16px;
-}
-.tarjeta .x{
-    width: 40px;
-    height: 40px;
-    background-color: #0e502a;
-    border-radius: 50%;
-    transition: all 0.5s;
-    background-image: url(../img/circle-xmark-regular.svg);
-    background-size: cover;
-    position: absolute;
-    left: 320px;
-    bottom: 350px;
-}
-.tarjeta .x:hover{
-    background-color: #fff;
-    transform: scale(1.1);
-    transition: all 0.6s;
-}
-.tituloMiCuenta{
-    margin: 50px 100px 50px 100px;
-    font-size: large;
-}
-
-.form-cuentas{
-    position: relative;
-    border: 2px solid darkgrey;
-    border-radius: 5px;
-    margin: 0px 100px 50px 100px;
-    width: 50%;
-}
-
-.form-cuentas h1{
-    font-size: large;
-    margin: 20px 0px 20px 0px;
-}
-
-.form-cuentas table{
-    border-collapse: collapse;
-    width: 100%;
-}
-.form-cuentas  td, th,tr {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: center;
-  }
-  
-.form-cuentas  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-
-.form-cuentas a{
-    margin: 20px 0px 20px 0px; 
-    position: absolute;
-    top: 6px;
-    right: 16px;
-}
-.form-cuentas input{
-    border-radius: 5px;
-}
-.form-cuentas i{
-    margin-left: 20px;
-}
-.form-cuentas input:hover{
-    background-color: #018039;
-    text-shadow: #000;
-    color: #fff;
-}
-.tituloCategoria1{
-    text-align: center;
-    font-size: large;
-    text-decoration: underline solid;
-    margin: 30px 0px 30px 0px;
-}
-.portadaCategorias{
-    position: relative;
-    top: 100px;
-}
-.portadaCategorias ul{
-    display:flex;
-    justify-content: space-evenly;
-    padding: 5px;
-    margin-bottom: 245px;
-
-}
-.portadaCategorias li{
-    height: 150px;
-    width: 150px;
-    list-style: none;
-    padding: 60px;
-    border: 2px solid grey;
-    border-radius: 5px;
-}
-.portadaCategorias p{
-    text-decoration: none;
-    color: black;
-    padding: 10px 10px;
-    position: relative;
-    bottom: 120px;
-    font-weight: bold;
-    font-size: 125%;
-}
-.portadaCategorias .tartas{
-    background-image: url(../img/tartas1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-.portadaCategorias .viandas{
-    background-image: url(../img/viandas-saludables-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-.portadaCategorias .menuSemanal{
-    background-image: url(../img/menu-semanal1.JPG);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.categoriaProducto{
-    position: relative;
-    
-}
-.categoriaProducto ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.categoriaProducto li{
-    margin: 20px;
-    padding: 20px;
-    position: relative;
-    border: 2px solid grey;
-    height: 200px;
-    width: 200px;
-    border-radius: 5px;
-
-}
-.categoriaProducto label{
-    margin:0;
-    background-color: white;
-    position: absolute;
-    top: 190px;
-    padding: 2px;
-    width: inherit;
-    font-size: larger;
-}
-.categoriaProducto a{
-    color: #000;
-}
-.categoriaProducto p{
-    background-color: rgba(187, 166, 166, 0.911);
-    position: absolute;
-    top: 150px;
-    left: 190px;
-    border: 2px groove rgb(153, 148, 148);
-    border-radius: 10%;
-    padding: 2px;
-    font-size: larger;
-   
-}
-
-.categoriaProducto .tarta1{
-    background-image: url(../img/tartas1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.categoriaProducto .tarta2{
-    background-image: url(../img/tarta-calabaza.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.categoriaProducto .tarta3{
-    background-image: url(../img/tarta-de-choclo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.categoriaProducto .vianda1{
-    background-image: url(../img/viandas-saludables-3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.categoriaProducto .vianda2{
-    background-image: url(../img/viandas-saludables-4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.categoriaProducto .vianda3{
-    background-image: url(../img/viandas-saludables-5.JPG);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.categoriaProducto .menu1{
-    background-image: url(../img/menu-semanal1.JPG);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.categoriaProducto .menu2{
-    background-image: url(../img/menusemanal2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.categoriaProducto .menu3{
-    background-image: url(../img/menu-semanal3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.contactosItem {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.contacto form{
-    margin-top: 100px;
-    width: 450px;
-    box-sizing: border-box;
-    padding: 10px 20px;
-    border-radius: 7px;
-    text-align: left;
-}
-.contacto form:hover{
-    background-color: #01803893;
-    transition: all 0.7s;
-    box-shadow: 7px 13px 37px #000;
-    color: #fff;
-}
-.contactosItem h2{
-    text-align: center;
-    margin-top: 40px;
-    text-decoration: underline;
-    padding: 20px;
-}
-.contacto input,textarea{
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none;
-}
-textarea{
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
-}
-#boton-Enviar{
-    width: 30%;
-    background-color: #0e502a;
-    border-radius: 4px;
-    border: none;
-    padding: 10px;
-    color: #fff;
-    margin-left: 64%;
-    font-size: 16px;
-}
-#boton-Enviar:hover{
-    background-color: #fff;
-    color: #000;
-    transition: all 0.6s;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-.contacto2 {
-    margin-top: 100px;
-    width: 450px;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 7px;
-    position: relative;
-    top: 110px;
-    height: 300px;
-}
-.contacto2:hover{
-    background-color: #01803893;
-    transition: all 0.7s;
-    box-shadow: 7px 13px 37px #000;
-    color: #fff;
-}
-.contacto2 p{
-    padding: 10px;
-}
-.contacto2 a{
-    text-decoration: none;
-    
-}
-.contacto2 p a{
-    color: #000;
-}
-.contacto2 p a:hover{
-    color: #fff;
-    text-transform: uppercase;
-}
-.maps{
-    height: 300px;
-    padding: 10px;
-    border-radius: 7px;
-}
-.maps:hover{
-    background-color: #01803893;
-    transition: all 0.7s;
-    box-shadow: 7px 13px 37px #000;
-}
-.carritoList{
-    width: 80%;
-}
-.carritoList table{
-    border-collapse: collapse;
-    width: 80%;
-    margin: auto;
-}
-.carritoList  td, th,tr {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: center;
-  }
-  
-.carritoList  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-
-
-.carritoList input{
-    position: relative;
-    left: 650px;
-    border: 2px solid grey;
-    border-radius: 5px;
-    padding: 10px;
-    margin:30px;
-}
-.carritoList input:hover{
-    background-color: #018039;
-    color: #fff;
-}
-
-.vista-producto{
-    max-width: 50%;
-    border-radius: 7px;
-    margin-top: 50px;
-    margin-left: 50px;
-    box-sizing: border-box;
-}
-.vista-producto div{
-
-    border-radius: 5px;
-    padding: 10px;
-}
-.vista-producto:hover{
-    background-color: #018039;
-    box-shadow: 7px 13px 37px #000;
-    border: 5px #018039 outset;
-    color: #000;
-    transition: all 0.3s;
-    opacity: 0.8;
-}
-.vista-producto img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 7px;
-}
-.vista-producto h2{
-    margin: 0px 0px 20px 0px
-}
-.vista-producto p{
-    border-radius: 7px;
-    background-color: #018039;
-    color: #fff;
-    position: relative;
-    bottom: 100px;
-    left: 650px;
-    padding: 16px;
-    width: fit-content;
-}
-.input-info{
-    width: 20%;
-    border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
-}
-#agregar-carrito{
-    width: 25%;
-    background-color: #018039;
-    border-radius: 7px;
-    border: none;
-    padding: 10px;
-    color: #fff;
-    margin-left: 50px;
-    font-size: 16px;
-    opacity: 0.9;
-}
-#agregar-carrito:hover{
-    background-color: #fff;
-    color: #018039;
-    transition: all 0.6s;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-.tartas-flex h3{
-    text-align: center;
-    text-decoration: underline;
-    margin: 50px;
-    width: 100%;
-}
-
-.tarta-choclo{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 7px;
-    margin-left: 100px;
-    cursor: pointer;
-}
-.tarta-choclo:hover{
-    background-color: #018039;
-    box-shadow: 7px 13px 37px #000;
-    border: 5px #018039 outset;
-    color: #000;
-    transition: all 0.3s;
-    opacity: 0.8;
-}
-#precio-choclo{
-    text-align: center;
-    border-radius: 7px;
-    background-color: #018039;
-    color: #fff;
-    position: absolute;
-    padding: 16px;
-    width: 35px;
-    height: 10px;
-    margin-left: 333px;
-    margin-top: -60px;
-}
-#titulo-choclo{
-    cursor: pointer;
-    text-align: center;
-    color: #fff;
-    border-radius: 7px;
-    background-color: #018039;
-    width: 300px;
-    margin-left: 100px;
-}
-#titulo-choclo:hover{
-    background-color: #018039;
-    box-shadow: 7px 13px 37px #000;
-    border: 5px #018039 outset;
-    color: #fff;
-    transition: all 0.3s;
-    opacity: 0.8;
-}
-.tarta-cebolla{
-    cursor: pointer;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 7px;
-}
-.tarta-cebolla:hover{
-    background-color: #018039;
-    box-shadow: 7px 13px 37px #000;
-    border: 5px #018039 outset;
-    color: #000;
-    transition: all 0.3s;
-    opacity: 0.8;
-}
-#precio-cebolla{
-    text-align: center;
-    border-radius: 7px;
-    background-color: #018039;
-    color: #fff;
-    position: absolute;
-    padding: 16px;
-    width: 35px;
-    height: 10px;
-    margin-left: 233px;
-    margin-top: -60px;
-}
-#titulo-cebolla{
-    cursor: pointer;
-    text-align: center;
-    color: #fff;
-    border-radius: 7px;
-    background-color: #018039;
-    width: 300px;
-}
-#titulo-cebolla:hover{
-    background-color: #018039;
-    box-shadow: 7px 13px 37px #000;
-    border: 5px #018039 outset;
-    color: #fff;
-    transition: all 0.3s;
-    opacity: 0.8;
-}
-.tarta-zapallo{
-    cursor: pointer;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 7px;
-    margin-right: 100px;
-   
-}
-.tarta-zapallo:hover{
-    background-color: #018039;
-    box-shadow: 7px 13px 37px #000;
-    border: 5px #018039 outset;
-    color: #000;
-    transition: all 0.3s;
-    opacity: 0.8;
-}
-#precio-zapallo{
-    text-align: center;
-    border-radius: 7px;
-    background-color: #018039;
-    color: #fff;
-    position: absolute;
-    padding: 16px;
-    width: 35px;
-    height: 10px;
-    margin-left: 233px;
-    margin-top: -60px;
-}
-#titulo-zapallo{
-    cursor: pointer;
-    text-align: center;
-    color: #fff;
-    border-radius: 7px;
-    background-color: #018039;
-    width: 300px;
-}
-#titulo-zapallo:hover{
-    background-color: #018039;
-    box-shadow: 7px 13px 37px #000;
-    border: 5px #018039 outset;
-    color: #fff;
-    transition: all 0.3s;
-    opacity: 0.8;
-}
-.formNuevaCuenta p{
-    margin: 25px 0px 25px 0px;
-}
-.formNuevaCuenta{
-    background-color: #fff;
-    width: 500px;
-    height: 650px;
-    margin:auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 3px solid black;
-    border-radius: 1em;
-    font-size: 18px;
-    box-shadow: 10px 15px 40px #fff;
-
-}
-.formNuevaCuenta .logo{
-    height: 260px;
-    border-radius: 1em;
-}
-.formNuevaCuenta input{
-    height: 25px;
-    width: 98%;
-    margin: 5px 0px 10px 0px
-}
-.formNuevaCuenta div{
-    display: flex;
-    justify-content: space-evenly;
-}
-.formNuevaCuenta .btnCtaNueva{
-    text-decoration: none;
-    border: 2px solid grey;
-    background-color: #018039;
-    color: white;
-    padding: 7px;
-    margin: 10px;
-    border-radius: 5px;
-}
-.formNuevaCuenta .btnCtaNueva:hover{
-    background-color: #018039;
-    box-shadow: 7px 13px 37px #000;
-    border: 5px #018039 outset;
-    color: #fff;
-    transition: all 0.3s;
-    opacity: 0.8;
-}
-
-.pagar-con-tarjeta{
-    border-radius: 10px 10px;
-    border: 2px solid #0e502a;
-    background-color: #018039;
-    box-sizing: border-box;
-    box-shadow: 7px 13px 37px #000;
-    width: 340px;
-    height: 350px;
-    color: #fff;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.pagar-con-tarjeta img{
-    width: 20px;
-}
-.x-pagar{
-    width: 40px;
-    height: 40px;
-    background-color: #0e502a;
-    border-radius: 50%;
-    transition: all 0.5s;
-    background-image: url(../img/circle-xmark-regular.svg);
-    background-size: cover;
-    position: absolute;
-    left: 310px;
-    top: -10px;
-}
-.x-pagar:hover{
-    background-color: #fff;
-    transform: scale(1.1);
-    transition: all 0.6s;
-}
-
-#tarjeta-guardada{
-    width: 98%;
-    height: 30px;
-    border-radius: 4px;
-    padding: 5px;
-    border: 1px solid;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.pagar-con-tarjeta a{
-    text-decoration: none;
-    color: #fff;
-}
-#otra-tarjeta{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-#direcciones-guardadas{
-    width: 98%;
-    height: 30px;
-    border-radius: 4px;
-    padding: 5px;
-    border: 1px solid;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-#otra-direccion{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-#pagar-tarjeta{
-    cursor: pointer;
-    width: 30%;
-    background-color: #0e502a;
-    border-radius: 4px;
-    border: none;
-    padding: 10px;
-    color: #fff;
-    margin-left: 64%;
-    font-size: 16px;
-}
-#pagar-tarjeta:hover{
-    background-color: #fff;
-    color: #000;
-    transition: all 0.6s;
-}
-.pagar-con-tarjeta2{
-    visibility: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px 10px;
-    border: 2px solid #0e502a;
-    background-color: #018039;
-    box-sizing: border-box;
-    box-shadow: 7px 13px 37px #000;
-    width: 370px;
-    height: 550px;
-    color: #fff;
-    padding: 20px;
-}
-
-.popup{
-    visibility: visible;
-}
-
-.pagar-con-tarjeta2 img{
-    width: 20px;
-}
-#pagar-tarjeta2{
-    cursor: pointer;
-    width: 30%;
-    background-color: #0e502a;
-    border-radius: 4px;
-    border: none;
-    padding: 10px;
-    color: #fff;
-    margin-left: 64%;
-    font-size: 16px;
-}
-#pagar-tarjeta2:hover{
-    background-color: #fff;
-    color: #000;
-    transition: all 0.6s;
-}
-
-.x-pagar2{
-    width: 40px;
-    height: 40px;
-    background-color: #0e502a;
-    border-radius: 50%;
-    transition: all 0.5s;
-    background-image: url(../img/circle-xmark-regular.svg);
-    background-size: cover;
-    position: absolute;
-    left: 340px;
-    top: -10px;
-}
-
-.x-pagar2:hover{
-    background-color: #fff;
-    transform: scale(1.1);
-    transition: all 0.6s;
-}
-
-#tarjeta-guardada2{
-    width: 95%;
-    height: 30px;
-    border-radius: 4px;
-    padding: 5px;
-    border: 1px solid;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.formNuevaCuenta input:invalid{
-    border: 1px solid red;
-}
-.filtro{
-    display: none;
-}
-
-
-@media screen and (max-width: 667px){
-    body{
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-items: center;
+    h2{
+        color: #fff;
+        font-size: 1.5em;
         text-align: center;
-        margin: 0;
-        padding: 0;
-        font-size: 0.8em;
-        box-sizing: border-box;
-    }
-    img{
-        max-width: 100%;
+        padding: 1em;
+        background-color: green;
+        
+        border: 0.3em solid #fff;
+        border-radius: 10px;
     }
 
     .contenedor-principal{
         display: flex;
         flex-wrap: nowrap;
         box-sizing: border-box;
+        align-items: center;
+        background-color: #018039;
     }
-
+    .contenedor-principal a{
+        color: #fff;
+        cursor: pointer;
+    }
+    .contenedor-principal img{
+        max-width: 100% ;
+    }
+    .contenedor-principal article{
+        width: calc(33% - 10px);
+        margin: 0.7rem;
+    }
     .contenedor-principal input{
-        width: 70%;
+        width: 100%;
         text-align: center;
     }
-    
+    .contenedor-principal span{
+        color: #fff;
+    }
+    .menuDesplegable{
+        background-color: white;
+        background-image: url(../img/hamburger.gif);
+    }
+    .menu-principal{
 
-    .menu-principal ul{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-}
+        display: none;
+    }
 
 
     .carrousel-principal{
@@ -1001,91 +59,113 @@ textarea{
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
+        text-align: center;
     }
-    .categorias article{
-        width: 40em;
+    .categorias a{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         flex-wrap: nowrap;
-        margin: 2em;
-    }
-
-    .categorias a{
+        margin: 0.5em;
         width: 80%;
+        color: black;
+        font-weight: bold;
     }
 
-    .mas-vendidos ul{
+    #productosMayorVenta {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
         align-items: center;
+        justify-content: space-between;
+        margin: 5em 5em 5em 5em;
     }
 
-    .mas-vendidos li{
-        width: 90%;
-        box-sizing: border-box;
-        margin: 2em;
+    .mas-vendidos {
+        max-width: 300px;
     }
-    
-    .mas-vendidos p{
-        text-align: center;
-        top: 10px;
-        left: 130px;
-        background-color: #fff;
-    } 
 
-    .mas-vendidos label{
-        top: 30px;
+    .card {
+        padding: 0.5em;
+        margin: 0 .5em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: none;
+
     }
+
+    .card>img {
+        width: 100%;
+        height: 20em;
+        margin-bottom: 1.5em;
+    }
+
+    .mas-vendidos button {
+        position: relative;
+        left: 0.5em;
+        width: 95%;
+        border: none;
+        outline: 0;
+        padding: 0.2em;
+        background-color: #018039;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .mas-vendidos button:hover {
+        opacity: 0.7;
+    }
+
 
     .metodos-pago{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0-5em;
-        margin: 10em;
-    }
-
-    .metodos-pago img{
-        max-width: 100%;
-    }
-
-    .footer-main{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-principal{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 150px;
-        width: 100%;
-    }
-
-    .footer-principal .logo-index{
-        display: flex;
-        
-    }
-
-    .footer-p{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .footer-ul{
-        display: flex;
-        margin-top: 50px;
-        
+        display: none;
     }
     
-    .footer-redes{
+    .footer-principal {
+        color: #fff;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        background-color: #018039;
+        position: absolute;
+        padding: 1em;
+        width: -webkit-fill-available;
     }
+ 
+    .footer-principal img {
+        height: 60px;
+        width: 100px;
+        border-radius: 7px;
+        text-align: left;
+        margin: 5px;
+    }
+
+    .footer-principal p {
+        
+        bottom: 90px;
+        left: 110px;
+        z-index: 1;
+        padding-top: 20px;
+    }
+
+    .footer-principal a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer-principal .logo-index {
+        display: flex;
+    }
+    .footer-principal li{
+        list-style:none;
+    }
+
+    .footer-p {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
 
     .portadaCategorias ul{
         display: flex;
@@ -1166,9 +246,23 @@ textarea{
     }
 }
 
-@media screen and (max-width: 767px){
-    
-    body{
+
+/*tablets*/
+
+@media screen and (min-width: 576px) and (max-width: 850px){
+ 
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    .bodyDirecciones {
+        background-image: url(../img/background-image.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+    body {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -1179,111 +273,186 @@ textarea{
         font-size: 1em;
         box-sizing: border-box;
     }
-    img{
-        max-width: 100%;
-    }
 
-    .contenedor-principal{
-        display: flex;
-        flex-wrap: nowrap;
-        box-sizing: border-box;
-    }
-
-    .contenedor-principal input{
-        width: 70%;
+    h2 {
+        padding: 1em;
         text-align: center;
     }
-    
-
-    .menu-principal ul{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-}
 
 
-    .carrousel-principal{
-        display: flex;
+    .body-index {
+        background-image: none;
+        position: relative;
+        padding-bottom: 100px;
+        min-height: 100vh;
     }
 
-    .categorias{
+    .contenedor-principal {
+        background-color: #018039;
+        height: 80px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedor-principal img {
+        height: 70px;
+        width: 128px;
+        border-radius: 7px;
+    }
+
+    .contenedor-principal input {
+        height: 45px;
+        margin-top: 10px;
+        border-radius: 7px;
+    }
+
+
+    .contenedor-principal span {
+        height: 45px;
+        margin: 25px 30px 0px 0px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .menu-principal {
+        background-color: #018039;
+        height: 30px;
+        border: 1px solid black;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .menu-principal ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+
+    }
+
+    .menu-principal li {
+        list-style: none;
+    }
+
+    .menu-principal a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 10px;
+    }
+
+    #carouselindex img{
+        height: 25em;
+    }
+    .categorias {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
     }
-    .categorias article{
-        width: 40em;
+    .categorias a {
+        background-color: #018039;
+        width: 25%;
+        margin: 25px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 7px;
+
+    }
+
+    #productosMayorVenta {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: nowrap;
-        margin: 2em;
+        margin: 5em 5em 5em 5em;
     }
 
-    .categorias a{
-        width: 85%;
+    .mas-vendidos {
+        max-width: 300px;
     }
 
-    .mas-vendidos ul{
+    .card {
+        padding: 0.5em;
+        margin: 0 .5em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: none;
+
+    }
+
+    .card>img {
+        width: 100%;
+        height: 20em;
+        margin-bottom: 1.5em;
+    }
+
+    .mas-vendidos button {
+        position: relative;
+        left: 0.5em;
+        width: 95%;
+        border: none;
+        outline: 0;
+        padding: 0.2em;
+        background-color: #018039;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .mas-vendidos button:hover {
+        opacity: 0.7;
+    }
+
+    .metodos-pago{
+        margin-bottom: 8em;
+    }
+
+    .footer-principal {
+        color: #fff;
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #018039;
+        position: absolute;
+        bottom: 0;
+        padding: 1em;
+        width: -webkit-fill-available;
+    }
+ 
+    .footer-principal img {
+        height: 60px;
+        width: 100px;
+        border-radius: 7px;
+        text-align: left;
+        margin: 5px;
     }
 
-    .mas-vendidos li{
-        width: 90%;
-        box-sizing: border-box;
-        margin: 2em;
-    }
-    
-    .mas-vendidos p{
-        text-align: center;
-        top: 10px;
-        left: 200px;
-        background-color: #fff;
-    } 
-
-    .mas-vendidos label{
-        top: 20px;
-    }
-
-    .footer-main{
-        display: flex;
-        flex-direction: column;
+    .footer-principal p {
         
+        bottom: 90px;
+        left: 110px;
+        z-index: 1;
+        padding-top: 20px;
     }
 
-    .footer-principal{
+    .footer-principal a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer-principal .logo-index {
+        display: flex;
+    }
+    .footer-principal li{
+        list-style:none;
+    }
+
+    .footer-p {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        height: 130px;
-        
-    }
-
-    .footer-principal .logo-index{
-        display: flex;
-    }
-
-    .footer-p{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .footer-ul{
-        display: flex;
-        margin-top: 50px;
-    }
-    
-    .footer-redes{
-        display: flex;
-        flex-direction: row;
-        gap: 0.5em;
     }
 
     .agregar{
@@ -1300,9 +469,23 @@ textarea{
         text-decoration: none;
     }
 }
+
+/*escritorio chico*/
+
+@media screen and (min-width: 850px) and (max-width: 991px){
     
-@media screen and (min-width: 768px) and (max-width: 2000px){
-    body{
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    .bodyDirecciones {
+        background-image: url(../img/background-image.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+    body {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -1314,50 +497,73 @@ textarea{
         box-sizing: border-box;
     }
 
-    h2{
+    h2 {
         padding: 1em;
         text-align: center;
     }
 
 
-    .body-index{
+    .body-index {
         background-image: none;
         position: relative;
         padding-bottom: 100px;
         min-height: 100vh;
     }
-    .contenedor-principal{
+
+    .contenedor-principal {
         background-color: #018039;
         height: 80px;
         padding: 5px;
         display: flex;
         justify-content: space-between;
     }
-    .contenedor-principal img{
+
+    .contenedor-principal img {
         height: 70px;
         width: 128px;
         border-radius: 7px;
     }
-    .contenedor-principal input{
-        width: 800px;
-        height: 45px; 
+
+    .contenedor-principal input {
+        height: 45px;
         margin-top: 10px;
         border-radius: 7px;
     }
-    .contenedor-principal span{
-        height: 45px; 
+
+    .contenedor-principal span {
+        height: 45px;
         margin: 25px 30px 0px 0px;
         color: rgba(255, 255, 255, 1);
     }
-    
 
-    .menu-principal ul{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .menu-principal {
+        background-color: #018039;
+        height: 30px;
+        border: 1px solid black;
+        padding: 0px 10px 0px 10px;
     }
 
-    .categorias{
+    .menu-principal ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+
+    }
+
+    .menu-principal li {
+        list-style: none;
+    }
+
+    .menu-principal a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 10px;
+    }
+
+    #carouselindex img{
+        height: 25em;
+    }
+    .categorias {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -1366,7 +572,17 @@ textarea{
         padding: 3em;
     }
 
-    .categorias a{
+    .categorias article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 30px;
+        line-height: 100px;
+        text-align: center;
+        vertical-align: middle
+    }
+
+    .categorias a {
         background-color: #018039;
         width: 25%;
         margin: 25px;
@@ -1377,33 +593,35 @@ textarea{
         display: inline-block;
         font-size: 16px;
         border-radius: 7px;
-    
+
     }
-    
-    #productosMayorVenta{
+
+    #productosMayorVenta {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 5em 5em 5em 5em;
     }
-    .mas-vendidos{
+
+    .mas-vendidos {
         max-width: 300px;
     }
-    .card{
+
+    .card {
         padding: 0.5em;
         margin: 0 .5em;
         box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
         border: none;
-        
+
     }
 
-    .card > img{
+    .card>img {
         width: 100%;
         height: 20em;
         margin-bottom: 1.5em;
     }
 
-    .mas-vendidos button{
+    .mas-vendidos button {
         position: relative;
         left: 0.5em;
         width: 95%;
@@ -1415,12 +633,15 @@ textarea{
         cursor: pointer;
         font-size: 20px;
     }
-    .mas-vendidos button:hover{
+
+    .mas-vendidos button:hover {
         opacity: 0.7;
     }
- 
+    .metodos-pago{
+        margin-bottom: 8em;
+    }
 
-    .footer-principal{
+    .footer-principal {
         color: #fff;
         display: flex;
         flex-direction: row;
@@ -1428,84 +649,1277 @@ textarea{
         background-color: #018039;
         position: absolute;
         bottom: 0;
-        padding: 0.8em;
-        width:-webkit-fill-available;        
+        padding: 1em;
+        width: -webkit-fill-available;
     }
-    .footer-principal img{
+
+    .footer-principal img {
         height: 60px;
         width: 100px;
         border-radius: 7px;
         text-align: left;
         margin: 5px;
     }
-    .footer-principal p{
+
+    .footer-principal p {
         position: relative;
         bottom: 90px;
         left: 110px;
         z-index: 1;
         padding-top: 20px;
     }
-    .footer-principal a{
+
+    .footer-principal a {
         color: #fff;
         text-decoration: none;
     }
-    .footer-principal .logo-index{
+
+    .footer-principal .logo-index {
         display: flex;
+    }
+    .footer-principal li{
+        list-style:none;
     }
 
-    .footer-ul{
-        display: flex;
-        margin-top: 50px;
-    }
-    
-    .footer-redes{
-        display: flex;
-        flex-direction: row;
-        gap: 0.5em;
-
-    }
-    .footer-p{
+    .footer-p {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+    .agregar{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    
+    .form-cuentas a{
+        text-decoration: none;
+    }
+}
+
+
+/*escritorios normales*/
+@media screen and (min-width: 992px) and (max-width: 1500px) {
+    /*index*/
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    .bodyDirecciones {
+        background-image: url(../img/background-image.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        padding: 1em;
+        text-align: center;
+    }
+
+
+    .body-index {
+        background-image: none;
+        position: relative;
+        padding-bottom: 100px;
+        min-height: 100vh;
+    }
+
+    .contenedor-principal {
+        background-color: #018039;
+        height: 80px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedor-principal img {
+        height: 70px;
+        width: 128px;
+        border-radius: 7px;
+    }
+
+    .contenedor-principal input {
+        width: 800px;
+        height: 45px;
+        margin-top: 10px;
+        border-radius: 7px;
+    }
+
+    .contenedor-principal span {
+        height: 45px;
+        margin: 25px 30px 0px 0px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .menu-principal {
+        background-color: #018039;
+        height: 30px;
+        border: 1px solid black;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .menu-principal ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+
+    }
+
+    .menu-principal li {
+        list-style: none;
+    }
+
+    .menu-principal a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 10px;
+    }
+
+    #carouselindex img{
+        height: 25em;
+    }
+    .categorias {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 3em;
+    }
+
+    .categorias article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 30px;
+        line-height: 100px;
+        text-align: center;
+        vertical-align: middle
+    }
+
+    .categorias a {
+        background-color: #018039;
+        width: 25%;
+        margin: 25px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 7px;
+
+    }
+
+    #productosMayorVenta {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 5em 5em 5em 5em;
+    }
+
+    .mas-vendidos {
+        max-width: 300px;
+    }
+
+    .card {
+        padding: 0.5em;
+        margin: 0 .5em;
+        box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+        border: none;
+
+    }
+
+    .card>img {
+        width: 100%;
+        height: 20em;
+        margin-bottom: 1.5em;
+    }
+
+    .mas-vendidos button {
+        position: relative;
+        left: 0.5em;
+        width: 95%;
+        border: none;
+        outline: 0;
+        padding: 0.2em;
+        background-color: #018039;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .mas-vendidos button:hover {
+        opacity: 0.7;
+    }
+    .metodos-pago{
+        margin-bottom: 8em;
+    }
+
+    .footer-principal {
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #018039;
+        position: absolute;
+        bottom: 0;
+        padding: 1em;
+        width: -webkit-fill-available;
+    }
+
+    .footer-principal img {
+        height: 60px;
+        width: 100px;
+        border-radius: 7px;
+        text-align: left;
+        margin: 5px;
+    }
+
+    .footer-principal p {
+        position: relative;
+        bottom: 90px;
+        left: 110px;
+        z-index: 1;
+        padding-top: 20px;
+    }
+
+    .footer-principal a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer-principal .logo-index {
+        display: flex;
+    }
+    .footer-principal li{
+        list-style:none;
+    }
+
+    .footer-p {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /*categorias*/
     .relacionados {
-        display:flex;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin: 5em;
         padding: 1rem;
 
-        
-      }
+
+    }
+
     .carousel-item {
         margin-right: 0;
         flex: 0 0 33.333333%;
-        
+
     }
-    .agregar{
+
+    .agregar {
         cursor: pointer;
     }
 
+    .inicioLogin h3 {
+        text-align: center;
+        border: 1px solid #ccc;
+        margin: 0.5em;
+        border-radius: 1em;
+        width: 500px;
+        margin: auto;
+        background-color: #018039;
+        color: #fff;
+        padding: 1em;
+    }
+
+    .form-login p {
+        margin: 25px 0px 25px 0px;
+    }
+
+    .form-login {
+        background-color: #fff;
+        width: 500px;
+        height: 600px;
+        margin: auto;
+        margin-top: 10px;
+        border: 3px solid black;
+        border-radius: 1em;
+        font-size: 18px;
+        box-shadow: 10px 15px 40px #fff;
+
+    }
+
+    .form-login .logo {
+        height: 260px;
+        border-radius: 1em;
+    }
+
+    .form-login input {
+        height: 25px;
+        width: 98%;
+        margin: 5px 0px 10px 0px
+    }
+
+    .form-login div {
+        text-align: center;
+        margin: 40px;
+    }
+
+    .form-login .titulo {
+        width: auto;
+    }
+
+    .form-login select {
+        width: 98%;
+        margin: 5px 0px 10px 0px;
+        height: 25px;
+    }
+
+    .form-login span {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .form-login .x {
+        width: 30px;
+        height: 30px;
+        background-color: #0e502a;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-image: url(../img/circle-xmark-regular.svg);
+        background-size: cover;
+        position: absolute;
+        left: 970px;
+        bottom: 630px;
+    }
+
+    .form-login .x:hover {
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: all 0.6s;
+    }
+
+
+    .tarjeta {
+
+        position: absolute;
+        top: 450px;
+        left: 500px;
+        z-index: 2;
+        border-radius: 10px 10px 10px 10px;
+        border: 2px solid #0e502a;
+        width: 350px;
+        opacity: 1;
+        box-sizing: border-box;
+        background-color: #018039;
+        color: #fff;
+        margin: auto;
+        padding: 30px;
+        box-shadow: 7px 13px 37px #000;
+
+    }
+
+    .tarjeta h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .clase-inputs {
+        width: 90%;
+        padding: 5px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid;
+        font-size: 18px;
+    }
+
+    .tarjeta .boton {
+        width: 30%;
+        background-color: #0e502a;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 64%;
+        font-size: 16px;
+    }
+
+    .tarjeta .boton:hover {
+        background-color: #fff;
+        color: #000;
+        transition: all 0.6s;
+    }
+
+    .tarjeta .flex {
+        display: flex;
+        gap: 10px;
+        margin-right: 16px;
+    }
+
+    .tarjeta .x {
+        width: 40px;
+        height: 40px;
+        background-color: #0e502a;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-image: url(../img/circle-xmark-regular.svg);
+        background-size: cover;
+        position: absolute;
+        left: 320px;
+        bottom: 350px;
+    }
+
+    .tarjeta .x:hover {
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: all 0.6s;
+    }
+
+    .tituloMiCuenta {
+        margin: 50px 100px 50px 100px;
+        font-size: large;
+    }
+
+    .form-cuentas {
+        position: relative;
+        border: 2px solid darkgrey;
+        border-radius: 5px;
+        margin: 0px 100px 50px 100px;
+        width: 50%;
+    }
+
+    .form-cuentas h1 {
+        font-size: large;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .form-cuentas table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .form-cuentas td,
+    th,
+    tr {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .form-cuentas tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    .form-cuentas a {
+        margin: 20px 0px 20px 0px;
+        position: absolute;
+        top: 6px;
+        right: 16px;
+    }
+
+    .form-cuentas input {
+        border-radius: 5px;
+    }
+
+    .form-cuentas i {
+        margin-left: 20px;
+    }
+
+    .form-cuentas input:hover {
+        background-color: #018039;
+        text-shadow: #000;
+        color: #fff;
+    }
+
+    .tituloCategoria1 {
+        text-align: center;
+        font-size: large;
+        text-decoration: underline solid;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .portadaCategorias {
+        position: relative;
+        top: 100px;
+    }
+
+    .portadaCategorias ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5px;
+        margin-bottom: 245px;
+
+    }
+
+    .portadaCategorias li {
+        height: 150px;
+        width: 150px;
+        list-style: none;
+        padding: 60px;
+        border: 2px solid grey;
+        border-radius: 5px;
+    }
+
+    .portadaCategorias p {
+        text-decoration: none;
+        color: black;
+        padding: 10px 10px;
+        position: relative;
+        bottom: 120px;
+        font-weight: bold;
+        font-size: 125%;
+    }
+
+    .portadaCategorias .tartas {
+        background-image: url(../img/tartas1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .portadaCategorias .viandas {
+        background-image: url(../img/viandas-saludables-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .portadaCategorias .menuSemanal {
+        background-image: url(../img/menu-semanal1.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .categoriaProducto {
+        position: relative;
+
+    }
+
+    .categoriaProducto ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .categoriaProducto li {
+        margin: 20px;
+        padding: 20px;
+        position: relative;
+        border: 2px solid grey;
+        height: 200px;
+        width: 200px;
+        border-radius: 5px;
+
+    }
+
+    .categoriaProducto label {
+        margin: 0;
+        background-color: white;
+        position: absolute;
+        top: 190px;
+        padding: 2px;
+        width: inherit;
+        font-size: larger;
+    }
+
+    .categoriaProducto a {
+        color: #000;
+    }
+
+    .categoriaProducto p {
+        background-color: rgba(187, 166, 166, 0.911);
+        position: absolute;
+        top: 150px;
+        left: 190px;
+        border: 2px groove rgb(153, 148, 148);
+        border-radius: 10%;
+        padding: 2px;
+        font-size: larger;
+
+    }
+
+    .categoriaProducto .tarta1 {
+        background-image: url(../img/tartas1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .categoriaProducto .tarta2 {
+        background-image: url(../img/tarta-calabaza.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .categoriaProducto .tarta3 {
+        background-image: url(../img/tarta-de-choclo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .categoriaProducto .vianda1 {
+        background-image: url(../img/viandas-saludables-3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .categoriaProducto .vianda2 {
+        background-image: url(../img/viandas-saludables-4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .categoriaProducto .vianda3 {
+        background-image: url(../img/viandas-saludables-5.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .categoriaProducto .menu1 {
+        background-image: url(../img/menu-semanal1.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .categoriaProducto .menu2 {
+        background-image: url(../img/menusemanal2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .categoriaProducto .menu3 {
+        background-image: url(../img/menu-semanal3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .contactosItem {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .contacto form {
+        margin-top: 100px;
+        width: 450px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        border-radius: 7px;
+        text-align: left;
+    }
+
+    .contacto form:hover {
+        background-color: #01803893;
+        transition: all 0.7s;
+        box-shadow: 7px 13px 37px #000;
+        color: #fff;
+    }
+
+    .contactosItem h2 {
+        text-align: center;
+        margin-top: 40px;
+        text-decoration: underline;
+        padding: 20px;
+    }
+
+    .contacto input,
+    textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+    }
+
+    textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+    }
+
+    #boton-Enviar {
+        width: 30%;
+        background-color: #0e502a;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 64%;
+        font-size: 16px;
+    }
+
+    #boton-Enviar:hover {
+        background-color: #fff;
+        color: #000;
+        transition: all 0.6s;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .contacto2 {
+        margin-top: 100px;
+        width: 450px;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        position: relative;
+        top: 110px;
+        height: 300px;
+    }
+
+    .contacto2:hover {
+        background-color: #01803893;
+        transition: all 0.7s;
+        box-shadow: 7px 13px 37px #000;
+        color: #fff;
+    }
+
+    .contacto2 p {
+        padding: 10px;
+    }
+
+    .contacto2 a {
+        text-decoration: none;
+
+    }
+
+    .contacto2 p a {
+        color: #000;
+    }
+
+    .contacto2 p a:hover {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .maps {
+        height: 300px;
+        padding: 10px;
+        border-radius: 7px;
+    }
+
+    .maps:hover {
+        background-color: #01803893;
+        transition: all 0.7s;
+        box-shadow: 7px 13px 37px #000;
+    }
+
+    .carritoList {
+        width: 80%;
+    }
+
+    .carritoList table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+    }
+
+    .carritoList td,
+    th,
+    tr {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .carritoList tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+
+    .carritoList input {
+        position: relative;
+        left: 650px;
+        border: 2px solid grey;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 30px;
+    }
+
+    .carritoList input:hover {
+        background-color: #018039;
+        color: #fff;
+    }
+
+    .vista-producto {
+        max-width: 50%;
+        border-radius: 7px;
+        margin-top: 50px;
+        margin-left: 50px;
+        box-sizing: border-box;
+    }
+
+    .vista-producto div {
+
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .vista-producto:hover {
+        background-color: #018039;
+        box-shadow: 7px 13px 37px #000;
+        border: 5px #018039 outset;
+        color: #000;
+        transition: all 0.3s;
+        opacity: 0.8;
+    }
+
+    .vista-producto img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+
+    .vista-producto h2 {
+        margin: 0px 0px 20px 0px
+    }
+
+    .vista-producto p {
+        border-radius: 7px;
+        background-color: #018039;
+        color: #fff;
+        position: relative;
+        bottom: 100px;
+        left: 650px;
+        padding: 16px;
+        width: fit-content;
+    }
+
+    .input-info {
+        width: 20%;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+    }
+
+    #agregar-carrito {
+        width: 25%;
+        background-color: #018039;
+        border-radius: 7px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 50px;
+        font-size: 16px;
+        opacity: 0.9;
+    }
+
+    #agregar-carrito:hover {
+        background-color: #fff;
+        color: #018039;
+        transition: all 0.6s;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .tartas-flex h3 {
+        text-align: center;
+        text-decoration: underline;
+        margin: 50px;
+        width: 100%;
+    }
+
+    .tarta-choclo {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 7px;
+        margin-left: 100px;
+        cursor: pointer;
+    }
+
+    .tarta-choclo:hover {
+        background-color: #018039;
+        box-shadow: 7px 13px 37px #000;
+        border: 5px #018039 outset;
+        color: #000;
+        transition: all 0.3s;
+        opacity: 0.8;
+    }
+
+    #precio-choclo {
+        text-align: center;
+        border-radius: 7px;
+        background-color: #018039;
+        color: #fff;
+        position: absolute;
+        padding: 16px;
+        width: 35px;
+        height: 10px;
+        margin-left: 333px;
+        margin-top: -60px;
+    }
+
+    #titulo-choclo {
+        cursor: pointer;
+        text-align: center;
+        color: #fff;
+        border-radius: 7px;
+        background-color: #018039;
+        width: 300px;
+        margin-left: 100px;
+    }
+
+    #titulo-choclo:hover {
+        background-color: #018039;
+        box-shadow: 7px 13px 37px #000;
+        border: 5px #018039 outset;
+        color: #fff;
+        transition: all 0.3s;
+        opacity: 0.8;
+    }
+
+    .tarta-cebolla {
+        cursor: pointer;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+
+    .tarta-cebolla:hover {
+        background-color: #018039;
+        box-shadow: 7px 13px 37px #000;
+        border: 5px #018039 outset;
+        color: #000;
+        transition: all 0.3s;
+        opacity: 0.8;
+    }
+
+    #precio-cebolla {
+        text-align: center;
+        border-radius: 7px;
+        background-color: #018039;
+        color: #fff;
+        position: absolute;
+        padding: 16px;
+        width: 35px;
+        height: 10px;
+        margin-left: 233px;
+        margin-top: -60px;
+    }
+
+    #titulo-cebolla {
+        cursor: pointer;
+        text-align: center;
+        color: #fff;
+        border-radius: 7px;
+        background-color: #018039;
+        width: 300px;
+    }
+
+    #titulo-cebolla:hover {
+        background-color: #018039;
+        box-shadow: 7px 13px 37px #000;
+        border: 5px #018039 outset;
+        color: #fff;
+        transition: all 0.3s;
+        opacity: 0.8;
+    }
+
+    .tarta-zapallo {
+        cursor: pointer;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 7px;
+        margin-right: 100px;
+
+    }
+
+    .tarta-zapallo:hover {
+        background-color: #018039;
+        box-shadow: 7px 13px 37px #000;
+        border: 5px #018039 outset;
+        color: #000;
+        transition: all 0.3s;
+        opacity: 0.8;
+    }
+
+    #precio-zapallo {
+        text-align: center;
+        border-radius: 7px;
+        background-color: #018039;
+        color: #fff;
+        position: absolute;
+        padding: 16px;
+        width: 35px;
+        height: 10px;
+        margin-left: 233px;
+        margin-top: -60px;
+    }
+
+    #titulo-zapallo {
+        cursor: pointer;
+        text-align: center;
+        color: #fff;
+        border-radius: 7px;
+        background-color: #018039;
+        width: 300px;
+    }
+
+    #titulo-zapallo:hover {
+        background-color: #018039;
+        box-shadow: 7px 13px 37px #000;
+        border: 5px #018039 outset;
+        color: #fff;
+        transition: all 0.3s;
+        opacity: 0.8;
+    }
+
+    .formNuevaCuenta p {
+        margin: 25px 0px 25px 0px;
+    }
+
+    .formNuevaCuenta {
+        background-color: #fff;
+        width: 500px;
+        height: 650px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 3px solid black;
+        border-radius: 1em;
+        font-size: 18px;
+        box-shadow: 10px 15px 40px #fff;
+
+    }
+
+    .formNuevaCuenta .logo {
+        height: 260px;
+        border-radius: 1em;
+    }
+
+    .formNuevaCuenta input {
+        height: 25px;
+        width: 98%;
+        margin: 5px 0px 10px 0px
+    }
+
+    .formNuevaCuenta div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .formNuevaCuenta .btnCtaNueva {
+        text-decoration: none;
+        border: 2px solid grey;
+        background-color: #018039;
+        color: white;
+        padding: 7px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    .formNuevaCuenta .btnCtaNueva:hover {
+        background-color: #018039;
+        box-shadow: 7px 13px 37px #000;
+        border: 5px #018039 outset;
+        color: #fff;
+        transition: all 0.3s;
+        opacity: 0.8;
+    }
+
+    .pagar-con-tarjeta {
+        border-radius: 10px 10px;
+        border: 2px solid #0e502a;
+        background-color: #018039;
+        box-sizing: border-box;
+        box-shadow: 7px 13px 37px #000;
+        width: 340px;
+        height: 350px;
+        color: #fff;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .pagar-con-tarjeta img {
+        width: 20px;
+    }
+
+    .x-pagar {
+        width: 40px;
+        height: 40px;
+        background-color: #0e502a;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-image: url(../img/circle-xmark-regular.svg);
+        background-size: cover;
+        position: absolute;
+        left: 310px;
+        top: -10px;
+    }
+
+    .x-pagar:hover {
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: all 0.6s;
+    }
+
+    #tarjeta-guardada {
+        width: 98%;
+        height: 30px;
+        border-radius: 4px;
+        padding: 5px;
+        border: 1px solid;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pagar-con-tarjeta a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #otra-tarjeta {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #direcciones-guardadas {
+        width: 98%;
+        height: 30px;
+        border-radius: 4px;
+        padding: 5px;
+        border: 1px solid;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #otra-direccion {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #pagar-tarjeta {
+        cursor: pointer;
+        width: 30%;
+        background-color: #0e502a;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 64%;
+        font-size: 16px;
+    }
+
+    #pagar-tarjeta:hover {
+        background-color: #fff;
+        color: #000;
+        transition: all 0.6s;
+    }
+
+    .pagar-con-tarjeta2 {
+        visibility: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px 10px;
+        border: 2px solid #0e502a;
+        background-color: #018039;
+        box-sizing: border-box;
+        box-shadow: 7px 13px 37px #000;
+        width: 370px;
+        height: 550px;
+        color: #fff;
+        padding: 20px;
+    }
+
+    .popup {
+        visibility: visible;
+    }
+
+    .pagar-con-tarjeta2 img {
+        width: 20px;
+    }
+
+    #pagar-tarjeta2 {
+        cursor: pointer;
+        width: 30%;
+        background-color: #0e502a;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 64%;
+        font-size: 16px;
+    }
+
+    #pagar-tarjeta2:hover {
+        background-color: #fff;
+        color: #000;
+        transition: all 0.6s;
+    }
+
+    .x-pagar2 {
+        width: 40px;
+        height: 40px;
+        background-color: #0e502a;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-image: url(../img/circle-xmark-regular.svg);
+        background-size: cover;
+        position: absolute;
+        left: 340px;
+        top: -10px;
+    }
+
+    .x-pagar2:hover {
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: all 0.6s;
+    }
+
+    #tarjeta-guardada2 {
+        width: 95%;
+        height: 30px;
+        border-radius: 4px;
+        padding: 5px;
+        border: 1px solid;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .formNuevaCuenta input:invalid {
+        border: 1px solid red;
+    }
+
+    .filtro {
+        display: none;
+    }
+
 }
 
 
-/*
-.footer-principal img{
-    height: 60px;
-    width: 100px;
-    border-radius: 7px;
-    text-align: left;
-    margin: 5px;
-}
-.footer-principal p{
-    position: relative;
-    bottom: 90px;
-    left: 110px;
-    z-index: 1;
-    padding-top: 20px;
-}
-.footer-principal a{
-    color: #fff;
-    text-decoration: none;
-}*/
