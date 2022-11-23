@@ -666,6 +666,16 @@
         margin-bottom: 6em;
      
     }
+    .vista-producto {
+        max-width: 50%;
+        border-radius: 7px;
+        box-sizing: border-box;
+        margin: 3em;
+    }
+    .relacionados{
+        display: flex;
+        margin-bottom: 10em;
+    }
 }
 
 /*escritorio chico*/
@@ -992,6 +1002,16 @@
     }
     .form-cuentas a{
         text-decoration: none;
+    }
+    .vista-producto {
+        max-width: 50%;
+        border-radius: 7px;
+        box-sizing: border-box;
+        margin: 3em;
+    }
+    .relacionados{
+        display: flex;
+        margin-bottom: 10em;
     }
 }
 
@@ -1720,47 +1740,9 @@
     .vista-producto {
         max-width: 50%;
         border-radius: 7px;
-        margin-top: 50px;
-        margin-left: 50px;
         box-sizing: border-box;
+        margin: 3em;
     }
-
-    .vista-producto div {
-
-        border-radius: 5px;
-        padding: 10px;
-    }
-
-    .vista-producto:hover {
-        background-color: #018039;
-        box-shadow: 7px 13px 37px #000;
-        border: 5px #018039 outset;
-        color: #000;
-        transition: all 0.3s;
-        opacity: 0.8;
-    }
-
-    .vista-producto img {
-        width: 100%;
-        object-fit: cover;
-        border-radius: 7px;
-    }
-
-    .vista-producto h2 {
-        margin: 0px 0px 20px 0px
-    }
-
-    .vista-producto p {
-        border-radius: 7px;
-        background-color: #018039;
-        color: #fff;
-        position: relative;
-        bottom: 100px;
-        left: 650px;
-        padding: 16px;
-        width: fit-content;
-    }
-
     .input-info {
         width: 20%;
         border-radius: 7px;
@@ -2230,5 +2212,4 @@
     }
 
 }
-
 
