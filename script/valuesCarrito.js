@@ -13,11 +13,13 @@ const contarCarrito = () => {
     cantidadEnCarrito.innerHTML = localStorage.getItem("carritoLength");
 }
 
+
 const buscarCategoria = () => {
 
     document.addEventListener("keyup", (e) => {
 
         if (e.target.matches("#buscar")) {
+            
             document.querySelectorAll(".claseCategoria").forEach(categoria => {
                 categoria.textContent.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
                     ? categoria.classList.remove("filtro")

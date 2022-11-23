@@ -2399,6 +2399,59 @@
         text-align: center;
         padding-top: 20px;
     }
+    #listaCategorias{
+
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 5px;
+        margin-bottom: 245px;
+        list-style-type: none;
+    }
+
+    #listaCategorias ul{
+        
+        height: 150px;
+        width: calc(33% - 2em);
+        list-style: none;
+        padding: 60px;
+        border: 2px solid grey;
+        border-radius: 5px;
+        
+    }
+    
+    #listaCategorias p{
+        text-decoration: none;
+        color: black;
+        padding: 10px 10px;
+        
+        bottom: 120px;
+        font-weight: bold;
+        font-size: 125%;
+    }
+    #listaCategorias li{
+        width: 30%;
+        height: 20em;
+    }
+    #listaCategorias .tartas{
+        background-image: url(../img/tartas1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    }
+    #listaCategorias .viandas{
+        background-image: url(../img/viandas-saludables-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    
+    }
+    #listaCategorias .menuSemanal{
+        background-image: url(../img/menu-semanal1.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    }
 
 }
 
