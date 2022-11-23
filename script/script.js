@@ -52,3 +52,45 @@ const contarCarrito = () => {
 contarCarrito();
 estadoCarrito();
 
+verCarrito.addEventListener("click", () => {
+  modalContainer.innerHTML = "";
+  modalContainer.style.display = "flex";
+  const modalHeader = document.createElement("div");
+  modalHeader.className = "modal-header";
+  modalHeader.innerHTML =`
+    <h1 class="modal-header-title">Carrito de compras</h1>
+  `;
+  modalContainer.append(modalHeader);
+
+  const modalbutton = document.createElement("h2");
+  modalbutton.innerText = "x";
+  modalbutton.className = "modal-header-button";
+
+  modalbutton.addEventListener("click", () => {
+    modalContainer.style.display = "none";
+  });
+
+  modalHeader.append(modalbutton);
+
+  /*si no es fav es productos*/
+  favoritos.forEach((productos) => {
+    let carritoContent = document.createElement("div");
+    carritoContent.className = "modal-content";
+    carritoContent.innerHTML = `
+      <img src="${productos.img}" >
+      <h3>${productos.nombre}</h3>
+      <p>${productos.precio} $</p>
+    `;
+    modalContainer.append(carritoContent);
+
+  });
+  
+  
+
+  const total = carrito.reduce((acc, el) => acc + el.precio, 0);
+
+  const totalComprado = document.createElement("div");
+  totalComprado.className = "total-content";
+  totalComprado.innerHTML = `total a pagar: ${total} $`;
+  modalContainer.append(totalComprado);
+});

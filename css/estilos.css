@@ -256,7 +256,96 @@
         flex-wrap: nowrap;
         margin-bottom: 80px;
     }
+    .inicioLogin h3 {
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+        background-color: #018039;
+        color: #fff;
+        position: relative;
+    }
 
+    .form-login p {
+        margin: 25px 0px 25px 0px;
+    }
+
+    .form-login {
+        background-color: #fff;
+        max-width: 575px;
+        width: 500px;      
+        border: 3px solid black;
+        border-radius: 1em;
+        font-size: 18px;
+        box-shadow: 10px 15px 40px #fff;
+
+    }
+
+    .form-login .logo {
+        text-align: center;
+        height: 13em;
+        border-radius: 1em;
+    }
+
+    .form-login input {
+        height: 25px;
+        width: 98%;
+        margin: 5px 0px 10px 0px
+    }
+
+    .form-login div {
+        text-align: center;
+        margin: 40px;
+    }
+
+    .form-login .titulo {
+        width: auto;
+    }
+
+    .form-login select {
+        width: 98%;
+        margin: 5px 0px 10px 0px;
+        height: 25px;
+    }
+
+    .form-login span {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .form-login .x {
+        width: 30px;
+        height: 30px;
+        background-color: #0e502a;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-image: url(../img/circle-xmark-regular.svg);
+        background-size: cover;
+        position: absolute;
+        left: 970px;
+        bottom: 630px;
+    }
+
+    .form-login .x:hover {
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: all 0.6s;
+    }
+    .tituloCategoria1 h1{
+        text-align: center;
+        padding: 1em;
+    }
+    .portadaCategorias {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .portadaCategorias .card{
+        width: 18rem;
+        text-align: center;
+        margin-bottom: 6em;
+     
+    }
     .agregar{
         cursor: pointer;
     }
@@ -481,8 +570,101 @@
         cursor: pointer;
     }
     
+    .inicioLogin h3 {
+        text-align: center;
+        border: 1px solid #ccc;
+        margin: 0.5em;
+        border-radius: 1em;
+        width: 500px;
+        background-color: #018039;
+        color: #fff;
+        padding: 1em;
+        position: relative;
+        top: 5em;
+        left: 4em;
+    }
+
+    .form-login p {
+        margin: 25px 0px 25px 0px;
+    }
+
+    .form-login {
+        background-color: #fff;
+        width: 500px;
+        height: 600px;
+        margin: 5em;
+        
+        border: 3px solid black;
+        border-radius: 1em;
+        font-size: 18px;
+        box-shadow: 10px 15px 40px #fff;
+
+    }
+
+    .form-login .logo {
+        height: 13em;
+        border-radius: 1em;
+    }
+
+    .form-login input {
+        height: 25px;
+        width: 98%;
+        margin: 5px 0px 10px 0px
+    }
+
+    .form-login div {
+        text-align: center;
+        margin: 40px;
+    }
+
+    .form-login .titulo {
+        width: auto;
+    }
+
+    .form-login select {
+        width: 98%;
+        margin: 5px 0px 10px 0px;
+        height: 25px;
+    }
+
+    .form-login span {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .form-login .x {
+        width: 30px;
+        height: 30px;
+        background-color: #0e502a;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-image: url(../img/circle-xmark-regular.svg);
+        background-size: cover;
+        position: absolute;
+        left: 970px;
+        bottom: 630px;
+    }
+
+    .form-login .x:hover {
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: all 0.6s;
+    }
+
     .form-cuentas a{
         text-decoration: none;
+    }
+    .portadaCategorias {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .portadaCategorias .card{
+        width: 18rem;
+        text-align: center;
+        margin-bottom: 6em;
+     
     }
 }
 
@@ -712,7 +894,102 @@
         margin-top: 15px;
         cursor: pointer;
     }
-    
+
+    .inicioLogin h3 {
+        text-align: center;
+        border: 1px solid #ccc;
+        margin: 0.5em;
+        border-radius: 1em;
+        width: 500px;
+        margin: auto;
+        background-color: #018039;
+        color: #fff;
+        padding: 1em;
+    }
+
+    .form-login p {
+        margin: 25px 0px 25px 0px;
+    }
+
+    .form-login {
+        background-color: #fff;
+        width: 500px;
+        height: 600px;
+        margin: auto;
+        margin-top: 10px;
+        border: 3px solid black;
+        border-radius: 1em;
+        font-size: 18px;
+        box-shadow: 10px 15px 40px #fff;
+
+    }
+
+    .form-login .logo {
+        height: 260px;
+        border-radius: 1em;
+    }
+
+    .form-login input {
+        height: 25px;
+        width: 98%;
+        margin: 5px 0px 10px 0px
+    }
+
+    .form-login div {
+        text-align: center;
+        margin: 40px;
+    }
+
+    .form-login .titulo {
+        width: auto;
+    }
+
+    .form-login select {
+        width: 98%;
+        margin: 5px 0px 10px 0px;
+        height: 25px;
+    }
+
+    .form-login span {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .form-login .x {
+        width: 30px;
+        height: 30px;
+        background-color: #0e502a;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-image: url(../img/circle-xmark-regular.svg);
+        background-size: cover;
+        position: absolute;
+        left: 970px;
+        bottom: 630px;
+    }
+
+    .form-login .x:hover {
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: all 0.6s;
+    }
+
+    .tituloCategoria1 h1{
+        text-align: center;
+        padding: 1em;
+    }
+    .portadaCategorias {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .portadaCategorias .card{
+        width: 18rem;
+        text-align: center;
+        margin-bottom: 6em;
+     
+    }
     .form-cuentas a{
         text-decoration: none;
     }
@@ -720,7 +997,7 @@
 
 
 /*escritorios normales*/
-@media screen and (min-width: 992px) and (max-width: 1500px) {
+@media screen and (min-width: 992px) and (max-width: 2000px) {
     /*index*/
     * {
         font-family: Arial, Helvetica, sans-serif;
@@ -773,7 +1050,7 @@
     }
 
     .contenedor-principal input {
-        width: 800px;
+        max-width: 100%;
         height: 45px;
         margin-top: 10px;
         border-radius: 7px;
@@ -1175,57 +1452,17 @@
     }
 
     .portadaCategorias {
-        position: relative;
-        top: 100px;
-    }
 
-    .portadaCategorias ul {
         display: flex;
-        justify-content: space-evenly;
-        padding: 5px;
-        margin-bottom: 245px;
-
+        flex-direction: row;
+        justify-content: space-around;
     }
-
-    .portadaCategorias li {
-        height: 150px;
-        width: 150px;
-        list-style: none;
-        padding: 60px;
-        border: 2px solid grey;
-        border-radius: 5px;
+    .portadaCategorias .card{
+        width: 18rem;
+        text-align: center;
+        margin-bottom: 10em;
+     
     }
-
-    .portadaCategorias p {
-        text-decoration: none;
-        color: black;
-        padding: 10px 10px;
-        position: relative;
-        bottom: 120px;
-        font-weight: bold;
-        font-size: 125%;
-    }
-
-    .portadaCategorias .tartas {
-        background-image: url(../img/tartas1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-
-    }
-
-    .portadaCategorias .viandas {
-        background-image: url(../img/viandas-saludables-1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-
-    }
-
-    .portadaCategorias .menuSemanal {
-        background-image: url(../img/menu-semanal1.JPG);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
     .categoriaProducto {
         position: relative;
 
@@ -1934,6 +2171,62 @@
 
     .filtro {
         display: none;
+    }
+    
+    .modal-container{
+        width: 80%;
+        margin: 0 10%;
+        color: black;
+        background-color: #0e502a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        overflow: auto;
+        z-index: 9;
+        top: 12vh;
+        scrollbar-color: none;
+    }
+
+    .modal-container::-webkit-scrollbar{
+        display: none;
+    }
+
+    .modal-header{
+        display: flex;
+        justify-content: space-around;
+        background-color: #0e502a;
+        color: #fff;
+        width: 100%;
+    }
+
+    .modal-header-title{
+        justify-self: start;
+    }
+
+    .modal-header-button{
+        cursor: pointer;
+    }
+
+    .modal-container > .modal-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        margin: 10px;
+    }
+
+    .modal-container > div > img{
+        height: 120px;
+        width: 120px;
+    }
+
+    .total-content{
+        font-size: 25px;
+        padding: 20px;
+        text-align: center;
+        padding-top: 20px;
     }
 
 }
