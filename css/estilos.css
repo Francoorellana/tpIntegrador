@@ -2,7 +2,10 @@
 
 /*celulares*/
 @media screen and (max-width: 575px){
-
+    .body-index{
+        margin: 0;
+        font-family: sans-serif;
+    }
     h2{
         color: #fff;
         font-size: 1.5em;
@@ -42,7 +45,7 @@
 
     .menu-principal {
         background-color: #018039;
-        height: 30px;
+        
         border: 1px solid black;
         padding: 0px 10px 0px 10px;
     }
@@ -348,6 +351,68 @@
     }
     .agregar{
         cursor: pointer;
+    }
+    
+    .tituloMiCuenta {
+        padding: 1em;
+        text-align: left;
+        margin-bottom: 1em;
+        font-size: large;
+    }
+
+    .form-cuentas {
+        position: relative;
+        left: 2em;
+        max-width: 80%;
+        margin-bottom: 2em;
+        border: 2px solid darkgrey;
+        border-radius: 5px;
+    }
+
+    .form-cuentas h1 {
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form-cuentas table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .form-cuentas td,
+    th,
+    tr {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .form-cuentas tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    .form-cuentas a {
+
+        width: 7em;
+        font-size: revert;
+        text-align: center;
+
+    }
+
+    .form-cuentas input {
+        border-radius: 5px;
+    }
+
+    .form-cuentas i {
+        margin-left: 20px;
+    }
+
+    .form-cuentas input:hover {
+        background-color: #018039;
+        text-shadow: #000;
+        color: #fff;
     }
 }
 
@@ -675,6 +740,66 @@
     .relacionados{
         display: flex;
         margin-bottom: 10em;
+    }
+    .tituloMiCuenta {
+        padding: 1em;
+        text-align: left;
+        margin-bottom: 1em;
+        font-size: large;
+    }
+
+    .form-cuentas {
+        position: relative;
+        left: 5em;
+        max-width: 80%;
+        margin-bottom: 2em;
+        border: 2px solid darkgrey;
+        border-radius: 5px;
+    }
+
+    .form-cuentas h1 {
+        font-size: large;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .form-cuentas table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .form-cuentas td,
+    th,
+    tr {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .form-cuentas tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    .form-cuentas a {
+        position: absolute;
+        right: 2em;
+        width: 4em;
+        font-size: revert;
+        text-align: center;
+
+    }
+
+    .form-cuentas input {
+        border-radius: 5px;
+    }
+
+    .form-cuentas i {
+        margin-left: 20px;
+    }
+
+    .form-cuentas input:hover {
+        background-color: #018039;
+        text-shadow: #000;
+        color: #fff;
     }
 }
 
@@ -1013,6 +1138,67 @@
         display: flex;
         margin-bottom: 10em;
     }
+    .tituloMiCuenta {
+        padding: 1em;
+        text-align: left;
+        margin-bottom: 1em;
+        font-size: large;
+    }
+
+    .form-cuentas {
+        position: relative;
+        left: 5em;
+        max-width: 80%;
+        margin-bottom: 5em;
+        border: 2px solid darkgrey;
+        border-radius: 5px;
+    }
+
+    .form-cuentas h1 {
+        font-size: large;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .form-cuentas table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .form-cuentas td,
+    th,
+    tr {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .form-cuentas tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    .form-cuentas a {
+        position: absolute;
+        right: 2em;
+        width: 4em;
+        font-size: revert;
+        text-align: center;
+
+    }
+
+    .form-cuentas input {
+        border-radius: 5px;
+    }
+
+    .form-cuentas i {
+        margin-left: 20px;
+    }
+
+    .form-cuentas input:hover {
+        background-color: #018039;
+        text-shadow: #000;
+        color: #fff;
+    }
+
 }
 
 
@@ -1409,16 +1595,19 @@
     }
 
     .tituloMiCuenta {
-        margin: 50px 100px 50px 100px;
+        padding: 1em;
+        text-align: left;
+        margin-bottom: 1em;
         font-size: large;
     }
 
     .form-cuentas {
         position: relative;
+        left: 5em;
+        max-width: 80%;
+        margin-bottom: 2em;
         border: 2px solid darkgrey;
         border-radius: 5px;
-        margin: 0px 100px 50px 100px;
-        width: 50%;
     }
 
     .form-cuentas h1 {
