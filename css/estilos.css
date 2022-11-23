@@ -147,6 +147,7 @@
         justify-content: space-between;
         background-color: #018039;
         position: absolute;
+        margin-top: 20em;
         padding: 1em;
         width: -webkit-fill-available;
     }
@@ -240,7 +241,7 @@
         flex-wrap: nowrap;
     }
 
-    .contacto{
+    /* .contacto{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -258,7 +259,126 @@
         flex-direction: column;
         flex-wrap: nowrap;
         margin-bottom: 80px;
+    } */
+
+
+    .contactosItem {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        justify-items: center;
     }
+
+    .contacto form {
+        margin-top: 100px;
+        width: 450px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        border-radius: 7px;
+        text-align: left;
+    }
+
+    .contacto form:hover {
+        background-color: #01803893;
+        transition: all 0.7s;
+        box-shadow: 7px 13px 37px #000;
+        color: #fff;
+    }
+
+    .contactosItem h2 {
+        text-align: center;
+        margin-top: 40px;
+        text-decoration: underline;
+        padding: 20px;
+    }
+
+    .contacto input,
+    textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+    }
+
+    textarea {
+        min-height: 100px;
+        max-height: 100px;
+        max-width: 100%;
+    }
+
+    #boton-Enviar {
+        width: 30%;
+        background-color: #0e502a;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 64%;
+        font-size: 16px;
+    }
+
+    #boton-Enviar:hover {
+        background-color: #fff;
+        color: #000;
+        transition: all 0.6s;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .contacto2 {
+        margin-top: 100px;
+        width: 450px;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        top: 110px;
+        height: 300px;
+    }
+
+    .contacto2:hover {
+        background-color: #01803893;
+        transition: all 0.7s;
+        box-shadow: 7px 13px 37px #000;
+        color: #fff;
+    }
+
+    .contacto2 p {
+        padding: 10px;
+    }
+
+    .contacto2 a {
+        text-decoration: none;
+
+    }
+
+    .contacto2 p a {
+        color: #000;
+    }
+
+    .contacto2 p a:hover {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .maps {
+        display: flex;
+        height: 100px;
+        padding: 10px;
+        border-radius: 7px;
+    }
+
+    /* .maps:hover {
+        background-color: #01803893;
+        transition: all 0.7s;
+        box-shadow: 7px 13px 37px #000;
+    } */
+
     .inicioLogin h3 {
         text-align: center;
         border: 1px solid #ccc;
@@ -413,6 +533,302 @@
         background-color: #018039;
         text-shadow: #000;
         color: #fff;
+    }
+
+    .pagar-con-tarjeta{
+        border-radius: 10px 10px;
+        border: 2px solid #0e502a;
+        background-color: #018039;
+        box-sizing: border-box;
+        box-shadow: 7px 13px 37px #000;
+        width: 340px;
+        height: 500px;
+        color: #fff;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .pagar-con-tarjeta img{
+        width: 20px;
+    }
+    .x-pagar{
+        width: 40px;
+        height: 40px;
+        background-color: #0e502a;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-image: url(../img/circle-xmark-regular.svg);
+        background-size: cover;
+        position: absolute;
+        left: 310px;
+        top: -10px;
+    }
+    .x-pagar:hover{
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: all 0.6s;
+    }
+    
+    #tarjeta-guardada{
+        width: 98%;
+        height: 30px;
+        border-radius: 4px;
+        padding: 5px;
+        border: 1px solid;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .pagar-con-tarjeta a{
+        text-decoration: none;
+        color: #fff;
+    }
+    #otra-tarjeta{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #direcciones-guardadas{
+        width: 98%;
+        height: 30px;
+        border-radius: 4px;
+        padding: 5px;
+        border: 1px solid;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #otra-direccion{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #pagar-tarjeta{
+        cursor: pointer;
+        width: 30%;
+        background-color: #0e502a;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 64%;
+        font-size: 16px;
+    }
+    #pagar-tarjeta:hover{
+        background-color: #fff;
+        color: #000;
+        transition: all 0.6s;
+    }
+    .pagar-con-tarjeta2{
+        visibility: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px 10px;
+        border: 2px solid #0e502a;
+        background-color: #018039;
+        box-sizing: border-box;
+        box-shadow: 7px 13px 37px #000;
+        width: 370px;
+        height: 650px;
+        color: #fff;
+        padding: 20px;
+    }
+    
+    .popup{
+        visibility: visible;
+    }
+    
+    .pagar-con-tarjeta2 img{
+        width: 20px;
+    }
+    #pagar-tarjeta2{
+        cursor: pointer;
+        width: 30%;
+        background-color: #0e502a;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 64%;
+        font-size: 16px;
+    }
+    #pagar-tarjeta2:hover{
+        background-color: #fff;
+        color: #000;
+        transition: all 0.6s;
+    }
+    
+    .x-pagar2{
+        width: 40px;
+        height: 40px;
+        background-color: #0e502a;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-image: url(../img/circle-xmark-regular.svg);
+        background-size: cover;
+        position: absolute;
+        left: 340px;
+        top: -10px;
+    }
+    
+    .x-pagar2:hover{
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: all 0.6s;
+    }
+    
+    #tarjeta-guardada2{
+        width: 95%;
+        height: 30px;
+        border-radius: 4px;
+        padding: 5px;
+        border: 1px solid;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .clase-inputs{
+        width: 80%;
+        height: 20px;
+        border-radius: 4px;
+    }
+
+
+    #listaCategorias{
+
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 245px;
+        list-style-type: none;
+    }
+
+    #listaCategorias ul{
+        height: 150px;
+        width: calc(33% - 2em);
+        list-style: none;
+        padding: 60px;
+        border: 2px solid grey;
+        border-radius: 5px;
+        
+    }
+    
+    #listaCategorias p{
+        text-decoration: none;
+        color: black;
+        padding: 10px 10px;
+        text-align: center;
+        bottom: 120px;
+        font-weight: bold;
+        font-size: 125%;
+    }
+    #listaCategorias li{
+        border-radius: 3px;
+        margin: 20px;
+        width: 70%;
+        height: 20em;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+    #listaCategorias .tartas{
+        background-image: url(../img/tartas1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    }
+    #listaCategorias .viandas{
+        background-image: url(../img/viandas-saludables-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    
+    }
+    #listaCategorias .menuSemanal{
+        background-image: url(../img/menu-semanal1.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    }
+
+    .carritoList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .carritoList a{
+        width: 30em;
+        margin-top: 3em;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* MODAL */
+
+    .modal-container{
+        width: 80%;
+        margin: 0 10%;
+        color: black;
+        background-color: #0e502a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        overflow: auto;
+        z-index: 9;
+        top: 12vh;
+        scrollbar-color: none;
+    }
+
+    .modal-container::-webkit-scrollbar{
+        display: none;
+    }
+
+    .modal-header{
+        display: flex;
+        justify-content: space-around;
+        background-color: #0e502a;
+        color: #fff;
+        width: 100%;
+    }
+
+    .modal-header-title{
+        justify-self: start;
+    }
+
+    .modal-header-button{
+        cursor: pointer;
+        height: 1em;
+        
+    }
+
+    .modal-container > .modal-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        margin: 10px;
+    }
+
+    .modal-container > div > img{
+        height: 120px;
+        width: 120px;
+    }
+
+    .total-content{
+        font-size: 25px;
+        padding: 20px;
+        text-align: center;
+        padding-top: 20px;
     }
 }
 
@@ -801,6 +1217,411 @@
         text-shadow: #000;
         color: #fff;
     }
+
+    .pagar-con-tarjeta{
+        border-radius: 10px 10px;
+        border: 2px solid #0e502a;
+        background-color: #018039;
+        box-sizing: border-box;
+        box-shadow: 7px 13px 37px #000;
+        width: 340px;
+        height: 500px;
+        color: #fff;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .pagar-con-tarjeta img{
+        width: 20px;
+    }
+    .x-pagar{
+        width: 40px;
+        height: 40px;
+        background-color: #0e502a;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-image: url(../img/circle-xmark-regular.svg);
+        background-size: cover;
+        position: absolute;
+        left: 310px;
+        top: -10px;
+    }
+    .x-pagar:hover{
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: all 0.6s;
+    }
+    
+    #tarjeta-guardada{
+        width: 98%;
+        height: 30px;
+        border-radius: 4px;
+        padding: 5px;
+        border: 1px solid;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .pagar-con-tarjeta a{
+        text-decoration: none;
+        color: #fff;
+    }
+    #otra-tarjeta{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #direcciones-guardadas{
+        width: 98%;
+        height: 30px;
+        border-radius: 4px;
+        padding: 5px;
+        border: 1px solid;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #otra-direccion{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #pagar-tarjeta{
+        cursor: pointer;
+        width: 30%;
+        background-color: #0e502a;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 64%;
+        font-size: 16px;
+    }
+    #pagar-tarjeta:hover{
+        background-color: #fff;
+        color: #000;
+        transition: all 0.6s;
+    }
+    .pagar-con-tarjeta2{
+        visibility: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px 10px;
+        border: 2px solid #0e502a;
+        background-color: #018039;
+        box-sizing: border-box;
+        box-shadow: 7px 13px 37px #000;
+        width: 370px;
+        height: 550px;
+        color: #fff;
+        padding: 70px;
+    }
+    
+    .popup{
+        visibility: visible;
+    }
+    
+    .pagar-con-tarjeta2 img{
+        width: 20px;
+    }
+    #pagar-tarjeta2{
+        cursor: pointer;
+        width: 30%;
+        background-color: #0e502a;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 64%;
+        font-size: 16px;
+    }
+    #pagar-tarjeta2:hover{
+        background-color: #fff;
+        color: #000;
+        transition: all 0.6s;
+    }
+    
+    .x-pagar2{
+        width: 40px;
+        height: 40px;
+        background-color: #0e502a;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-image: url(../img/circle-xmark-regular.svg);
+        background-size: cover;
+        position: absolute;
+        left: 340px;
+        top: -10px;
+    }
+    
+    .x-pagar2:hover{
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: all 0.6s;
+    }
+    
+    #tarjeta-guardada2{
+        width: 95%;
+        height: 30px;
+        border-radius: 4px;
+        padding: 5px;
+        border: 1px solid;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #listaCategorias{
+
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 245px;
+        list-style-type: none;
+    }
+
+    #listaCategorias ul{
+        height: 150px;
+        width: calc(33% - 2em);
+        list-style: none;
+        padding: 60px;
+        border: 2px solid grey;
+        border-radius: 5px;
+        
+    }
+    
+    #listaCategorias p{
+        text-decoration: none;
+        color: black;
+        padding: 10px 10px;
+        text-align: center;
+        bottom: 120px;
+        font-weight: bold;
+        font-size: 125%;
+    }
+    #listaCategorias li{
+        border-radius: 3px;
+        margin: 20px;
+        width: 70%;
+        height: 20em;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+    #listaCategorias .tartas{
+        background-image: url(../img/tartas1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    }
+    #listaCategorias .viandas{
+        background-image: url(../img/viandas-saludables-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    
+    }
+    #listaCategorias .menuSemanal{
+        background-image: url(../img/menu-semanal1.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    }
+
+    .carritoList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .carritoList a{
+        width: 30em;
+        margin-top: 3em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-container{
+        width: 80%;
+        margin: 0 10%;
+        color: black;
+        background-color: #0e502a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        overflow: auto;
+        z-index: 9;
+        top: 12vh;
+        scrollbar-color: none;
+    }
+
+    .modal-container::-webkit-scrollbar{
+        display: none;
+    }
+
+    .modal-header{
+        display: flex;
+        justify-content: space-around;
+        background-color: #0e502a;
+        color: #fff;
+        width: 100%;
+    }
+
+    .modal-header-title{
+        justify-self: start;
+    }
+
+    .modal-header-button{
+        cursor: pointer;
+    }
+
+    .modal-container > .modal-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        margin: 10px;
+    }
+
+    .modal-container > div > img{
+        height: 120px;
+        width: 120px;
+    }
+
+    .total-content{
+        font-size: 25px;
+        padding: 20px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+
+    .contactosItem {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+
+    .contacto form {
+        margin-top: 100px;
+        width: 450px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        border-radius: 7px;
+        text-align: left;
+    }
+
+    .contacto form:hover {
+        background-color: #01803893;
+        transition: all 0.7s;
+        box-shadow: 7px 13px 37px #000;
+        color: #fff;
+    }
+
+    .contactosItem h2 {
+        text-align: center;
+        margin-top: 40px;
+        text-decoration: underline;
+        padding: 20px;
+    }
+
+    .contacto input,
+    textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+    }
+
+    textarea {
+        min-height: 100px;
+        max-height: 100px;
+        max-width: 100%;
+    }
+
+    #boton-Enviar {
+        width: 30%;
+        background-color: #0e502a;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 64%;
+        font-size: 16px;
+    }
+
+    #boton-Enviar:hover {
+        background-color: #fff;
+        color: #000;
+        transition: all 0.6s;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .contacto2 {
+        margin-top: 100px;
+        width: 450px;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        top: 110px;
+        height: 300px;
+    }
+
+    .contacto2:hover {
+        background-color: #01803893;
+        transition: all 0.7s;
+        box-shadow: 7px 13px 37px #000;
+        color: #fff;
+    }
+
+    .contacto2 p {
+        padding: 10px;
+    }
+
+    .contacto2 a {
+        text-decoration: none;
+
+    }
+
+    .contacto2 p a {
+        color: #000;
+    }
+
+    .contacto2 p a:hover {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .maps {
+        display: flex;
+        height: 360px;
+        padding: 10px;
+        border-radius: 7px;
+    }
+
+    .maps:hover {
+        background-color: #01803893;
+        transition: all 0.7s;
+        box-shadow: 7px 13px 37px #000;
+    }
+
+
 }
 
 /*escritorio chico*/
@@ -1197,6 +2018,415 @@
         background-color: #018039;
         text-shadow: #000;
         color: #fff;
+    }
+
+
+    .pagar-con-tarjeta{
+        border-radius: 10px 10px;
+        border: 2px solid #0e502a;
+        background-color: #018039;
+        box-sizing: border-box;
+        box-shadow: 7px 13px 37px #000;
+        width: 340px;
+        height: 500px;
+        color: #fff;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .pagar-con-tarjeta img{
+        width: 20px;
+    }
+    .x-pagar{
+        width: 40px;
+        height: 40px;
+        background-color: #0e502a;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-image: url(../img/circle-xmark-regular.svg);
+        background-size: cover;
+        position: absolute;
+        left: 310px;
+        top: -10px;
+    }
+    .x-pagar:hover{
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: all 0.6s;
+    }
+    
+    #tarjeta-guardada{
+        width: 98%;
+        height: 30px;
+        border-radius: 4px;
+        padding: 5px;
+        border: 1px solid;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .pagar-con-tarjeta a{
+        text-decoration: none;
+        color: #fff;
+    }
+    #otra-tarjeta{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #direcciones-guardadas{
+        width: 98%;
+        height: 30px;
+        border-radius: 4px;
+        padding: 5px;
+        border: 1px solid;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #otra-direccion{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #pagar-tarjeta{
+        cursor: pointer;
+        width: 30%;
+        background-color: #0e502a;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 64%;
+        font-size: 16px;
+    }
+    #pagar-tarjeta:hover{
+        background-color: #fff;
+        color: #000;
+        transition: all 0.6s;
+    }
+    .pagar-con-tarjeta2{
+        visibility: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px 10px;
+        border: 2px solid #0e502a;
+        background-color: #018039;
+        box-sizing: border-box;
+        box-shadow: 7px 13px 37px #000;
+        width: 370px;
+        height: 550px;
+        color: #fff;
+        padding: 20px;
+    }
+    
+    .popup{
+        visibility: visible;
+    }
+    
+    .pagar-con-tarjeta2 img{
+        width: 20px;
+    }
+    #pagar-tarjeta2{
+        cursor: pointer;
+        width: 30%;
+        background-color: #0e502a;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 64%;
+        font-size: 16px;
+    }
+    #pagar-tarjeta2:hover{
+        background-color: #fff;
+        color: #000;
+        transition: all 0.6s;
+    }
+    
+    .x-pagar2{
+        width: 40px;
+        height: 40px;
+        background-color: #0e502a;
+        border-radius: 50%;
+        transition: all 0.5s;
+        background-image: url(../img/circle-xmark-regular.svg);
+        background-size: cover;
+        position: absolute;
+        left: 340px;
+        top: -10px;
+    }
+    
+    .x-pagar2:hover{
+        background-color: #fff;
+        transform: scale(1.1);
+        transition: all 0.6s;
+    }
+    
+    #tarjeta-guardada2{
+        width: 95%;
+        height: 30px;
+        border-radius: 4px;
+        padding: 5px;
+        border: 1px solid;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .clase-inputs{
+        width: 80%;
+        height: 20px;
+        border-radius: 4px;
+    }
+
+    #listaCategorias{
+
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 245px;
+        list-style-type: none;
+    }
+
+    #listaCategorias ul{
+        height: 150px;
+        width: calc(33% - 2em);
+        list-style: none;
+        padding: 60px;
+        border: 2px solid grey;
+        border-radius: 5px;
+        
+    }
+    
+    #listaCategorias p{
+        text-decoration: none;
+        color: black;
+        padding: 10px 10px;
+        text-align: center;
+        bottom: 120px;
+        font-weight: bold;
+        font-size: 125%;
+    }
+    #listaCategorias li{
+        border-radius: 3px;
+        margin: 20px;
+        width: 70%;
+        height: 20em;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+    #listaCategorias .tartas{
+        background-image: url(../img/tartas1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    }
+    #listaCategorias .viandas{
+        background-image: url(../img/viandas-saludables-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    
+    }
+    #listaCategorias .menuSemanal{
+        background-image: url(../img/menu-semanal1.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    }
+
+    .carritoList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .carritoList a{
+        width: 30em;
+        margin-top: 3em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-container{
+        width: 80%;
+        margin: 0 10%;
+        color: black;
+        background-color: #0e502a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        overflow: auto;
+        z-index: 9;
+        top: 12vh;
+        scrollbar-color: none;
+    }
+
+    .modal-container::-webkit-scrollbar{
+        display: none;
+    }
+
+    .modal-header{
+        display: flex;
+        justify-content: space-around;
+        background-color: #0e502a;
+        color: #fff;
+        width: 100%;
+    }
+
+    .modal-header-title{
+        justify-self: start;
+    }
+
+    .modal-header-button{
+        cursor: pointer;
+    }
+
+    .modal-container > .modal-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        margin: 10px;
+    }
+
+    .modal-container > div > img{
+        height: 120px;
+        width: 120px;
+    }
+
+    .total-content{
+        font-size: 25px;
+        padding: 20px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+
+    .contactosItem {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+
+    .contacto form {
+        margin-top: 100px;
+        width: 450px;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        border-radius: 7px;
+        text-align: left;
+    }
+
+    .contacto form:hover {
+        background-color: #01803893;
+        transition: all 0.7s;
+        box-shadow: 7px 13px 37px #000;
+        color: #fff;
+    }
+
+    .contactosItem h2 {
+        text-align: center;
+        margin-top: 40px;
+        text-decoration: underline;
+        padding: 20px;
+    }
+
+    .contacto input,
+    textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+    }
+
+    textarea {
+        min-height: 100px;
+        max-height: 100px;
+        max-width: 100%;
+    }
+
+    #boton-Enviar {
+        width: 30%;
+        background-color: #0e502a;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+        margin-left: 64%;
+        font-size: 16px;
+    }
+
+    #boton-Enviar:hover {
+        background-color: #fff;
+        color: #000;
+        transition: all 0.6s;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .contacto2 {
+        margin-top: 100px;
+        width: 450px;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        top: 110px;
+        height: 300px;
+    }
+
+    .contacto2:hover {
+        background-color: #01803893;
+        transition: all 0.7s;
+        box-shadow: 7px 13px 37px #000;
+        color: #fff;
+    }
+
+    .contacto2 p {
+        padding: 10px;
+    }
+
+    .contacto2 a {
+        text-decoration: none;
+
+    }
+
+    .contacto2 p a {
+        color: #000;
+    }
+
+    .contacto2 p a:hover {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .maps {
+        display: flex;
+        height: 360px;
+        padding: 10px;
+        border-radius: 7px;
+    }
+
+    .maps:hover {
+        background-color: #01803893;
+        transition: all 0.7s;
+        box-shadow: 7px 13px 37px #000;
     }
 
 }
@@ -1674,7 +2904,7 @@
     }
     .categoriaProducto {
         position: relative;
-
+        margin-bottom: 15em;
     }
 
     .categoriaProducto ul {
@@ -1878,7 +3108,9 @@
     }
 
     .maps {
-        height: 300px;
+        display: flex;
+        margin-bottom: 50px;
+        height: 500px;
         padding: 10px;
         border-radius: 7px;
     }
@@ -2275,7 +3507,7 @@
         box-sizing: border-box;
         box-shadow: 7px 13px 37px #000;
         width: 370px;
-        height: 550px;
+        height: 650px;
         color: #fff;
         padding: 20px;
     }
@@ -2430,7 +3662,7 @@
         font-size: 125%;
     }
     #listaCategorias li{
-        width: 30%;
+        width: 20%;
         height: 20em;
     }
     #listaCategorias .tartas{

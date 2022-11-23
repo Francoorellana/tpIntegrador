@@ -1,6 +1,6 @@
 //Modelando mas vendidos, comprar y agregar al carrito
 const mostrarMasVendidos = document.getElementById("productosMayorVenta");
-
+const modalContainer = document.getElementById("modal-container");
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 
@@ -32,7 +32,7 @@ favoritos.forEach((fav) => {
     estadoCarrito();
   }
   )
-  console.log(carrito)
+  
 
 });
 
